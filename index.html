@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Beranda | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -117,28 +117,28 @@
     </div>
   </div>
 
-  <section class="relative min-h-[90vh] flex items-center bg-neutral-900 overflow-hidden">
+  <section class="relative min-h-[90vh] flex items-center bg-neutral-900 overflow-hidden py-16 md:py-0">
     <div class="absolute inset-0">
-      <img src="assets/img/hero_banner.jpg" alt="Ashodaya Hospital" class="w-full h-full object-cover opacity-60">
+      <img src="assets/img/hero_banner.jpg" alt="Ashodaya Hospital" class="w-full h-full object-cover opacity-60" loading="lazy">
       <div class="absolute inset-0 bg-gradient-to-r from-siloam-navy/90 to-transparent"></div>
     </div>
     
-    <div class="max-w-[85rem] mx-auto px-6 relative z-10 w-full" data-aos="fade-up">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 relative z-10 w-full" data-aos="fade-up">
       <div class="max-w-2xl">
         <span class="inline-block bg-white/20 backdrop-blur border border-white/30 text-white rounded-full px-4 py-1.5 text-xs font-heading font-semibold tracking-wider uppercase mb-6">
           ★ Dikelola oleh Siloam Hospitals Network
         </span>
-        <h1 class="text-5xl lg:text-7xl font-heading font-bold text-white leading-tight mb-4">
+        <h1 class="text-3xl sm:text-5xl lg:text-7xl font-heading font-bold text-white leading-tight mb-4">
           Kesehatan Terpercaya<br>untuk Keluarga Anda
         </h1>
-        <p class="font-serif italic text-white/90 text-2xl mb-8">
+        <p class="font-serif italic text-white/90 text-xl sm:text-2xl mb-8">
           Ashodaya — Harapan Baru di Jantung Kota Yogyakarta
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="contact.html" class="px-8 py-4 bg-white text-siloam-blue font-heading font-semibold rounded-siloam shadow-lg hover:bg-neutral-100 transition-all">
+          <a href="contact.html" class="px-6 py-3.5 sm:px-8 sm:py-4 bg-white text-siloam-blue font-heading font-semibold rounded-siloam shadow-lg hover:bg-neutral-100 transition-all text-sm sm:text-base">
             Buat Janji Temu
           </a>
-          <a href="services.html" class="px-8 py-4 border-2 border-white text-white font-heading font-semibold rounded-siloam hover:bg-white/10 transition-all">
+          <a href="services.html" class="px-6 py-3.5 sm:px-8 sm:py-4 border-2 border-white text-white font-heading font-semibold rounded-siloam hover:bg-white/10 transition-all text-sm sm:text-base">
             Lihat Fasilitas
           </a>
         </div>
@@ -147,15 +147,15 @@
   </section>
   
   <!-- Filosofi Ashodaya -->
-  <section class="py-20 bg-ashodaya-dawn border-b border-ashodaya-stone/30 relative overflow-hidden">
+  <section class="py-16 md:py-20 bg-ashodaya-dawn border-b border-ashodaya-stone/30 relative overflow-hidden">
     <div class="absolute top-0 right-0 w-64 h-64 bg-ashodaya-gold/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
-    <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
       <div class="md:col-span-4" data-aos="fade-right">
-        <h2 class="text-4xl md:text-5xl font-serif italic text-siloam-navy mb-4">Mengenal<br><span class="text-ashodaya-gold">Ashodaya</span></h2>
-        <p class="font-heading font-semibold tracking-widest text-sm uppercase text-neutral-500">Filosofi Sebuah Nama</p>
+        <h2 class="text-3xl md:text-5xl font-serif italic text-siloam-navy mb-4">Mengenal<br><span class="text-ashodaya-gold">Ashodaya</span></h2>
+        <p class="font-heading font-semibold tracking-widest text-xs sm:text-sm uppercase text-neutral-500">Filosofi Sebuah Nama</p>
       </div>
       <div class="md:col-span-8" data-aos="fade-left">
-        <p class="text-xl md:text-2xl font-body font-light text-neutral-800 leading-relaxed mb-6">
+        <p class="text-lg md:text-2xl font-body font-normal text-neutral-800 leading-relaxed mb-6">
           Berangkat dari bahasa Sansekerta, <strong class="font-semibold text-siloam-blue">Ashodaya (आशोदय)</strong> adalah penyatuan harmonis dari <span class="italic text-ashodaya-gold">Asha</span> (Harapan) dan <span class="italic text-ashodaya-gold">Udaya</span> (Terbit/Fajar).
         </p>
         <p class="text-neutral-600 leading-relaxed">
@@ -165,18 +165,54 @@
     </div>
   </section>
 
+  <!-- Statistik Section -->
+  <section class="py-16 bg-gradient-to-br from-siloam-navy to-siloam-blue text-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="p-4" data-aos="fade-up">
+          <div class="text-4xl md:text-5xl font-heading font-bold text-ashodaya-gold mb-2">150</div>
+          <div class="text-xs sm:text-sm text-white/80 font-medium uppercase tracking-wider">Kapasitas Tempat Tidur (Bed)</div>
+        </div>
+        <div class="p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl md:text-5xl font-heading font-bold text-ashodaya-gold mb-2">9</div>
+          <div class="text-xs sm:text-sm text-white/80 font-medium uppercase tracking-wider">Poliklinik Spesialis Terintegrasi</div>
+        </div>
+        <div class="p-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl md:text-5xl font-heading font-bold text-ashodaya-gold mb-2">24/7</div>
+          <div class="text-xs sm:text-sm text-white/80 font-medium uppercase tracking-wider">Layanan Gawat Darurat & IGD</div>
+        </div>
+        <div class="p-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl md:text-5xl font-heading font-bold text-ashodaya-gold mb-2">Rp 466 M</div>
+          <div class="text-xs sm:text-sm text-white/80 font-medium uppercase tracking-wider">Total Rencana Anggaran Biaya</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="py-20 bg-white">
-    <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div data-aos="fade-right">
-        <img src="assets/img/hospital_lobby.png" alt="Lobi Hospital" class="rounded-siloam-lg shadow-siloam w-full h-[400px] object-cover">
+        <img src="assets/img/hospital_lobby.png" alt="Lobi Hospital" class="rounded-siloam-lg shadow-siloam w-full h-[300px] sm:h-[400px] object-cover" loading="lazy">
       </div>
       <div data-aos="fade-left">
         <span class="text-siloam-blue-light font-heading font-semibold tracking-widest text-xs uppercase block mb-2">TENTANG ASHODAYA</span>
-        <h2 class="text-4xl font-heading font-bold text-siloam-navy mb-6">Lebih dari Sekadar Rumah Sakit</h2>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-siloam-navy mb-6">Lebih dari Sekadar Rumah Sakit</h2>
         <p class="text-neutral-600 leading-relaxed mb-6">Ashodaya hadir untuk memberikan pelayanan medis bertaraf internasional dengan sentuhan kehangatan humanis khas Yogyakarta. Fasilitas modern kami dirancang untuk mempercepat proses penyembuhan Anda.</p>
         <a href="about.html" class="text-siloam-blue font-heading font-semibold hover:text-siloam-navy inline-flex items-center gap-2">
           Pelajari Lebih Lanjut <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="py-16 bg-gradient-to-r from-siloam-navy-dark to-siloam-blue text-white text-center">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-4xl font-heading font-bold mb-4">Siap Merasakan Layanan Kesehatan Premium?</h2>
+      <p class="text-white/80 mb-8 max-w-xl mx-auto text-sm sm:text-base">Temukan keunggulan medis dan kenyamanan bertaraf internasional yang kami tawarkan untuk kesembuhan optimal keluarga Anda.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="px-6 py-3 bg-white text-siloam-navy font-heading font-semibold rounded-siloam hover:bg-neutral-100 transition-all text-sm sm:text-base">Hubungi Pendaftaran</a>
+        <a href="summary.html" class="px-6 py-3 bg-ashodaya-gold text-white font-heading font-semibold rounded-siloam hover:bg-opacity-95 transition-all text-sm sm:text-base">Lihat Dokumen Project</a>
       </div>
     </div>
   </section>
@@ -221,9 +257,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -231,17 +265,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

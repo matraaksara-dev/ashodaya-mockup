@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Layanan & Fasilitas | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -118,16 +118,103 @@
   </div>
 
   <div class="bg-siloam-navy text-white py-16">
-    <div class="max-w-[85rem] mx-auto px-6 text-center" data-aos="fade-up">
-      <h1 class="text-4xl font-heading font-bold mb-4">Layanan & Fasilitas</h1>
-      <p class="text-lg text-white/80 max-w-2xl mx-auto">Fasilitas kesehatan terlengkap dan termodern di Yogyakarta.</p>
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+      <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Layanan & Fasilitas</h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">Fasilitas kesehatan terlengkap dan termodern di Yogyakarta.</p>
     </div>
   </div>
 
-  <section class="py-20 bg-neutral-50">
-    <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+  <!-- Poliklinik Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">RAWAT JALAN</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy">9 Poliklinik Spesialis Utama</h2>
+        <p class="text-neutral-600 mt-4">Pelayanan konsultasi rawat jalan yang didukung oleh jajaran dokter spesialis berpengalaman di bidangnya.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Umum</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Pelayanan kesehatan primer, skrining kesehatan menyeluruh, dan konsultasi keluhan umum pasien.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="50">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Internis</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Diagnosis dan penanganan medis penyakit dalam non-bedah untuk orang dewasa dan lansia.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Bedah</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Konsultasi pre-operasi dan pasca-operasi serta tindakan bedah minor hingga mayor terencana.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Kandungan</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Pelayanan kehamilan terpadu (USG 4D), persalinan aman, keluarga berencana, dan kesehatan reproduksi wanita.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Anak</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Pemantauan tumbuh kembang, imunisasi wajib & tambahan, serta pengobatan penyakit anak.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="250">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli THT</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Diagnosis dan pengobatan gangguan telinga, hidung, tenggorokan, kepala, serta leher.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Syaraf</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Penanganan penyakit sistem saraf termasuk stroke, epilepsi, nyeri kronis, dan sakit kepala.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="350">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Gigi</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Perawatan konservasi gigi, bedah mulut, perataan gigi (ortodonti), dan estetik mulut.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Poli Mata</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Pemeriksaan visus, penanganan katarak, glaukoma, serta kelainan refraksi mata anak dan dewasa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fasilitas Medis Utama -->
+  <section class="py-20 bg-neutral-50 border-t border-neutral-200">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">FASILITAS UTAMA</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy">Peralatan & Layanan Penunjang</h2>
+        <p class="text-neutral-600 mt-4">Peralatan medis canggih bersertifikat internasional dan layanan klinis darurat terpadu.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">IGD & Trauma Center 24 Jam</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Instalasi Gawat Darurat yang bersiap penuh 24 jam dengan tim dokter kegawatdaruratan dan ambulans respon cepat.</p>
+        </div>
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up" data-aos-delay="50">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">Laboratorium & Farmasi 24 Jam</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Laboratorium patologi klinik dan farmasi obat rawat jalan/rawat inap yang melayani pasien non-stop.</p>
+        </div>
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">Kamar Operasi Premium (OR)</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Dilengkapi dengan 5 ruang operasi mayor standar internasional dengan sterilisasi hepa-filter tekanan tinggi.</p>
+        </div>
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">Radiologi Diagnostik Canggih</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Fasilitas CT Scan 64 Slice, Magnetic Resonance Imaging (MRI), X-Ray C-Arm Mobile, dan Ultrasonografi (USG) 3D/4D.</p>
+        </div>
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">Unit Perawatan Intensif (ICU/NICU)</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Perawatan intensif bagi orang dewasa maupun bayi baru lahir dengan pengawasan monitor jantung 24 jam.</p>
+        </div>
+        <div class="bg-white p-6 rounded-siloam border border-neutral-200 shadow-sm" data-aos="fade-up" data-aos-delay="250">
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-3">Unit Hemodialisis</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Fasilitas cuci darah aman menggunakan mesin modern dengan penanganan terpadu tim ginjal-hipertensi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Healing Garden Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div data-aos="fade-right">
-        <img src="assets/img/healing_garden.png" alt="Healing Garden" class="rounded-siloam-lg shadow-siloam w-full h-[400px] object-cover">
+        <img src="assets/img/healing_garden.png" alt="Healing Garden" class="rounded-siloam-lg shadow-siloam w-full h-[300px] sm:h-[400px] object-cover" loading="lazy">
       </div>
       <div data-aos="fade-left">
         <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-6">Healing Garden: Oase Ketenangan</h2>
@@ -137,6 +224,65 @@
           <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Fitur air reflektif untuk relaksasi audio-visual.</li>
           <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Area duduk yang nyaman dan ramah kursi roda.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rawat Inap Section -->
+  <section class="py-20 bg-ashodaya-dawn border-t border-ashodaya-stone/20">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">AKOMODASI</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy">Distribusi Kamar Rawat Inap</h2>
+        <p class="text-neutral-600 mt-4">Kapasitas total 150 tempat tidur yang dibagi berdasarkan kelas kenyamanan dan kebutuhan medis pasien.</p>
+      </div>
+      
+      <div class="bg-white rounded-siloam shadow-siloam overflow-hidden max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-siloam-navy text-white text-sm uppercase">
+                <th class="py-4 px-6 font-semibold">Kelas Kamar</th>
+                <th class="py-4 px-6 font-semibold text-center">Jumlah Tempat Tidur</th>
+                <th class="py-4 px-6 font-semibold">Fasilitas Utama</th>
+              </tr>
+            </thead>
+            <tbody class="text-neutral-700 divide-y divide-neutral-200">
+              <tr class="hover:bg-neutral-50">
+                <td class="py-4 px-6 font-semibold text-siloam-blue">VIP Room</td>
+                <td class="py-4 px-6 text-center font-bold">24 Bed</td>
+                <td class="py-4 px-6 text-sm">1 Bed per kamar (VIP Luas 3.45m x 5.5m), Sofa bed pendamping, TV, Kulkas, AC, Kamar Mandi Dalam.</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-4 px-6 font-semibold text-siloam-blue">Kelas 1</td>
+                <td class="py-4 px-6 text-center font-bold">36 Bed</td>
+                <td class="py-4 px-6 text-sm">2 Bed per kamar, Pembatas gorden, TV, AC, Lemari pribadi, Kamar Mandi Dalam.</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-4 px-6 font-semibold text-siloam-blue">Kelas 2</td>
+                <td class="py-4 px-6 text-center font-bold">40 Bed</td>
+                <td class="py-4 px-6 text-sm">4 Bed per kamar, AC, Kursi penunggu, Kamar Mandi Dalam.</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-4 px-6 font-semibold text-siloam-blue">Kelas 3</td>
+                <td class="py-4 px-6 text-center font-bold">40 Bed</td>
+                <td class="py-4 px-6 text-sm">6 Bed per kamar (Memenuhi regulasi KRIS BPJS), AC, Kamar Mandi Dalam.</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-4 px-6 font-semibold text-siloam-blue">ICU / Intensive Care</td>
+                <td class="py-4 px-6 text-center font-bold">10 Bed</td>
+                <td class="py-4 px-6 text-sm">Sistem ventilasi hepa-filter terpusat, Monitoring vital sign 24 Jam, Tabung oksigen sentral.</td>
+              </tr>
+            </tbody>
+            <tfoot class="bg-neutral-100 font-bold">
+              <tr>
+                <td class="py-4 px-6 text-siloam-navy text-right">Total Kapasitas Bed</td>
+                <td class="py-4 px-6 text-center text-siloam-navy text-lg">150 Bed</td>
+                <td class="py-4 px-6 text-neutral-500 text-sm">Termasuk ruang isolasi khusus.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -181,9 +327,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -191,17 +335,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

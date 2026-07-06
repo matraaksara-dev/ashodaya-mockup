@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Executive Project Summary | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -119,15 +119,15 @@
 
   <div class="bg-siloam-navy text-white py-16 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10 bg-[url('assets/img/tampak_depan.jpg')] bg-cover bg-center"></div>
-    <div class="max-w-[85rem] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 text-center relative z-10" data-aos="fade-up">
       <span class="inline-block px-3 py-1 bg-ashodaya-gold text-white font-heading font-bold text-xs rounded-full uppercase tracking-widest mb-4">Strictly Confidential</span>
-      <h1 class="text-4xl font-heading font-bold mb-4">Executive Project Summary</h1>
-      <p class="text-lg text-white/80 max-w-2xl mx-auto">Perencanaan Pengembangan Proyek Rumah Sakit Ashodaya, D.I. Yogyakarta.</p>
+      <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Executive Project Summary</h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">Perencanaan Pengembangan Proyek Rumah Sakit Ashodaya, D.I. Yogyakarta.</p>
     </div>
   </div>
 
   <section class="py-16 bg-neutral-50">
-    <div class="max-w-[85rem] mx-auto px-6">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
       
       <!-- Project Overview -->
       <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
@@ -138,9 +138,10 @@
             </h2>
             <p class="text-neutral-600 leading-relaxed mb-4">
               <strong>Nama Proyek:</strong> Pembangunan Rumah Sakit Ashodaya - Fajar Harapan<br>
-              <strong>Pengelola:</strong> Siloam Hospitals Management<br>
-              <strong>Lokasi:</strong> Jl. Tentara Pelajar, Kel. Bumijo, Kec. Jetis, Kota Yogyakarta (DIY)<br>
-              <strong>Luas Lahan:</strong> 85 m x 66 m (5.610 m²)
+              <strong>Pengelola:</strong> Siloam Hospitals Management (Mitra Jaringan)<br>
+              <strong>Lokasi:</strong> Jl. Tentara Pelajar, Kel. Bumijo, Kec. Jetis, Kota Yogyakarta (DIY) 55231<br>
+              <strong>Luas Lahan:</strong> 85 m x 66 m (5.610 m²)<br>
+              <strong>Status Bangunan:</strong> 2 Massa bangunan terpisah (Gedung Utama & Gedung Parkir)
             </p>
             <p class="text-neutral-600 leading-relaxed">
               Ashodaya Hospital dirancang sebagai fasilitas pelayanan kesehatan premium di jantung kota pariwisata Yogyakarta, menyasar kelas menengah ke atas dengan keunggulan teknologi digital dan sentuhan arsitektur humanis.
@@ -149,18 +150,134 @@
           <div class="bg-neutral-50 p-6 rounded-siloam border border-neutral-100">
             <h3 class="font-heading font-bold text-siloam-navy mb-4">Kapasitas & Masterplan Fasilitas</h3>
             <ul class="space-y-3 text-sm text-neutral-700">
-              <li class="flex items-center gap-3"><i data-lucide="building" class="w-5 h-5 text-ashodaya-gold"></i> Gedung Rumah Sakit Utama: <strong>6 Lantai + 1 Basement</strong> (Tapering upwards).</li>
-              <li class="flex items-center gap-3"><i data-lucide="bed" class="w-5 h-5 text-ashodaya-gold"></i> Total Kapasitas Rawat Inap: <strong>150 Tempat Tidur</strong> (Termasuk ruang VIP di lantai atas).</li>
-              <li class="flex items-center gap-3"><i data-lucide="car" class="w-5 h-5 text-ashodaya-gold"></i> Gedung Parkir: <strong>5 Lantai Terpisah</strong> (Lt 1: IPAL, Lt 2-4: Parkir, Lt 5: Kantin).</li>
-              <li class="flex items-center gap-3"><i data-lucide="activity" class="w-5 h-5 text-ashodaya-gold"></i> Layanan Utama: <strong>IGD 24 Jam & 9 Poliklinik Spesialis</strong>.</li>
-              <li class="flex items-center gap-3"><i data-lucide="tree-deciduous" class="w-5 h-5 text-ashodaya-gold"></i> Ruang Terbuka: <strong>Healing Garden 17m x 67m</strong>.</li>
+              <li class="flex items-center gap-3"><i data-lucide="building" class="w-5 h-5 text-ashodaya-gold flex-shrink-0"></i> Gedung Rumah Sakit Utama: <strong>6 Lantai + 1 Basement</strong> (Tapering upwards).</li>
+              <li class="flex items-center gap-3"><i data-lucide="bed" class="w-5 h-5 text-ashodaya-gold flex-shrink-0"></i> Total Kapasitas Rawat Inap: <strong>150 Tempat Tidur</strong> (Termasuk ruang VIP di lantai atas).</li>
+              <li class="flex items-center gap-3"><i data-lucide="car" class="w-5 h-5 text-ashodaya-gold flex-shrink-0"></i> Gedung Parkir: <strong>5 Lantai Terpisah</strong> (Lt 1: IPAL, Lt 2-4: Parkir, Lt 5: Kantin).</li>
+              <li class="flex items-center gap-3"><i data-lucide="activity" class="w-5 h-5 text-ashodaya-gold flex-shrink-0"></i> Layanan Utama: <strong>IGD 24 Jam & 9 Poliklinik Spesialis</strong>.</li>
+              <li class="flex items-center gap-3"><i data-lucide="tree-deciduous" class="w-5 h-5 text-ashodaya-gold flex-shrink-0"></i> Ruang Terbuka: <strong>Healing Garden 17m x 67m</strong> (Area hijau bersih).</li>
             </ul>
           </div>
         </div>
       </div>
 
+      <!-- Capacity Detail: Floor Distribution Table -->
+      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-2 flex items-center gap-3">
+          <i data-lucide="layers" class="w-6 h-6 text-siloam-blue-light"></i> Distribusi Fungsi Lantai Gedung Utama
+        </h2>
+        <p class="text-neutral-500 text-sm mb-6">Spesifikasi operasional klinis dan alokasi ruang per lantai gedung rumah sakit.</p>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-siloam-navy text-white text-sm font-heading tracking-wide uppercase">
+                <th class="py-3 px-4 font-semibold rounded-tl-siloam w-24">Lantai</th>
+                <th class="py-3 px-4 font-semibold min-w-[250px]">Fungsi & Pelayanan Klinis</th>
+                <th class="py-3 px-4 font-semibold text-center rounded-tr-siloam w-36">Kapasitas Bed</th>
+              </tr>
+            </thead>
+            <tbody class="text-neutral-700 divide-y divide-neutral-200">
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Basement</td>
+                <td class="py-3 px-4">Parkir Dokter & Staf Manajemen, Koridor lift, Tangga darurat, Unit Laundry, Dapur khusus gizi rumah sakit, Gudang farmasi/logistik umum.</td>
+                <td class="py-3 px-4 text-center font-medium text-neutral-500">—</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 1</td>
+                <td class="py-3 px-4">Instalasi Gawat Darurat (IGD), Ruang Observasi, Area Bedah / Surgery, Clean up & Sterilization, Ruang Kamar Operasi (OK 1, OK 2), Ruang ganti medis, Ruang dokter jaga, Lobi Utama premium, Admisi & Kasir, Farmasi.</td>
+                <td class="py-3 px-4 text-center font-medium text-neutral-500">—</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 2</td>
+                <td class="py-3 px-4">Rawat Inap Kelas 3 (Kamar dengan kapasitas 6 tempat tidur per ruangan, sesuai regulasi BPJS KRIS).</td>
+                <td class="py-3 px-4 text-center font-bold text-siloam-navy">40 Bed</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 3</td>
+                <td class="py-3 px-4">Rawat Inap Kelas 2 (Kamar dengan kapasitas 4 tempat tidur per ruangan).</td>
+                <td class="py-3 px-4 text-center font-bold text-siloam-navy">40 Bed</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 4</td>
+                <td class="py-3 px-4">Rawat Inap Kelas 1 (Kamar dengan kapasitas 2 tempat tidur per ruangan).</td>
+                <td class="py-3 px-4 text-center font-bold text-siloam-navy">36 Bed</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 5</td>
+                <td class="py-3 px-4">Rawat Inap VIP (Kamar perawatan berukuran 3,45m x 5,5m per bed untuk kenyamanan premium privat).</td>
+                <td class="py-3 px-4 text-center font-bold text-siloam-navy">24 Bed</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 6</td>
+                <td class="py-3 px-4">Unit Perawatan Intensif (ICU/NICU/PICU), Koridor isolasi, Ruang alat medis, Rooftop & Akses pemeliharaan gedung.</td>
+                <td class="py-3 px-4 text-center font-bold text-siloam-navy">10 Bed</td>
+              </tr>
+            </tbody>
+            <tfoot class="bg-neutral-100 font-bold">
+              <tr>
+                <td colspan="2" class="py-3 px-4 text-right text-siloam-navy">Total Kapasitas Rencana Rawat Inap</td>
+                <td class="py-3 px-4 text-center text-siloam-blue text-lg">150 Bed</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- Capacity Detail: Parking Building -->
+      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-2 flex items-center gap-3">
+          <i data-lucide="car" class="w-6 h-6 text-siloam-blue-light"></i> Gedung Parkir Terpisah (5 Lantai)
+        </h2>
+        <p class="text-neutral-500 text-sm mb-6">Gedung parkir 43,5m x 30m terpisah dari gedung RS guna menjaga kualitas udara dan higienitas area klinis.</p>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-siloam-navy text-white text-sm font-heading tracking-wide uppercase">
+                <th class="py-3 px-4 font-semibold rounded-tl-siloam w-32">Lantai</th>
+                <th class="py-3 px-4 font-semibold min-w-[200px]">Alokasi Fungsi & Kapasitas</th>
+                <th class="py-3 px-4 font-semibold text-right rounded-tr-siloam w-40">Luas Floor (m²)</th>
+              </tr>
+            </thead>
+            <tbody class="text-neutral-700 divide-y divide-neutral-200">
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 1</td>
+                <td class="py-3 px-4">Unit Pengolahan Limbah (IPAL) Rumah Sakit (17,5m x 8m = 140m²), Area masuk/pos sekuriti tengah gedung parkir, ramp sirkulasi tengah gedung.</td>
+                <td class="py-3 px-4 text-right">1.305 m²</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 2</td>
+                <td class="py-3 px-4">Area Parkir (Kapasitas: 37 Mobil, 120 Sepeda Motor).</td>
+                <td class="py-3 px-4 text-right">1.305 m²</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 3</td>
+                <td class="py-3 px-4">Area Parkir (Kapasitas: 37 Mobil, 120 Sepeda Motor).</td>
+                <td class="py-3 px-4 text-right">1.305 m²</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 4</td>
+                <td class="py-3 px-4">Area Parkir (Kapasitas: 37 Mobil, 110 Sepeda Motor).</td>
+                <td class="py-3 px-4 text-right">1.305 m²</td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="py-3 px-4 font-semibold text-siloam-blue">Lantai 5</td>
+                <td class="py-3 px-4">Kantin Umum, Kafetaria medis, dan Pusat penunjang non-klinis pengunjung.</td>
+                <td class="py-3 px-4 text-right">1.305 m²</td>
+              </tr>
+            </tbody>
+            <tfoot class="bg-neutral-100 font-bold">
+              <tr>
+                <td colspan="2" class="py-3 px-4 text-right text-siloam-navy">Total Kapasitas Parkir Kendaraan</td>
+                <td class="py-3 px-4 text-right text-siloam-blue">111 Mobil, 350 Motor</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
       <!-- RAB Investment -->
-      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12" data-aos="fade-up">
+      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
         <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-2 flex items-center gap-3">
           <i data-lucide="pie-chart" class="w-6 h-6 text-siloam-blue-light"></i> Estimasi Nilai Investasi (RAB)
         </h2>
@@ -170,9 +287,9 @@
           <table class="w-full text-left border-collapse">
             <thead>
               <tr class="bg-siloam-navy text-white text-sm font-heading tracking-wide uppercase">
-                <th class="py-4 px-6 font-semibold rounded-tl-siloam">No.</th>
-                <th class="py-4 px-6 font-semibold">Uraian Pekerjaan</th>
-                <th class="py-4 px-6 font-semibold text-right rounded-tr-siloam">Estimasi Biaya (Rp)</th>
+                <th class="py-4 px-6 font-semibold rounded-tl-siloam w-16">No.</th>
+                <th class="py-4 px-6 font-semibold min-w-[250px]">Uraian Pekerjaan</th>
+                <th class="py-4 px-6 font-semibold text-right rounded-tr-siloam w-48">Estimasi Biaya (Rp)</th>
               </tr>
             </thead>
             <tbody class="text-neutral-700 divide-y divide-neutral-200">
@@ -232,7 +349,107 @@
             </tfoot>
           </table>
         </div>
+      </div>
+
+      <!-- Brand Identity System Section -->
+      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-6 flex items-center gap-3">
+          <i data-lucide="palette" class="w-6 h-6 text-siloam-blue-light"></i> Palet Warna Identitas & Penerapan Fisik
+        </h2>
+        <p class="text-neutral-600 leading-relaxed mb-8">
+          Nama <strong>Ashodaya</strong> merepresentasikan fajar terbitnya harapan baru. Desain interior dan lansekap menerapkan palet warna bertema fajar untuk kenyamanan visual psikologis pasien.
+        </p>
         
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div class="p-4 border border-neutral-200 rounded-siloam bg-neutral-50 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full mb-3" style="background-color: #F5A623;"></div>
+            <div class="font-bold text-siloam-navy text-sm">Dawn Gold</div>
+            <div class="text-xs text-neutral-500 mt-1">#F5A623</div>
+            <p class="text-xs text-neutral-600 mt-2">Logo utama & aksen pencahayaan hangat.</p>
+          </div>
+          <div class="p-4 border border-neutral-200 rounded-siloam bg-neutral-50 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full mb-3" style="background-color: #1A2A4A;"></div>
+            <div class="font-bold text-siloam-navy text-sm">Twilight Blue</div>
+            <div class="text-xs text-neutral-500 mt-1">#1A2A4A</div>
+            <p class="text-xs text-neutral-600 mt-2">Dinding lobi utama & tekstur profesional.</p>
+          </div>
+          <div class="p-4 border border-neutral-200 rounded-siloam bg-neutral-50 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full mb-3" style="background-color: #8BA88E;"></div>
+            <div class="font-bold text-siloam-navy text-sm">Healing Sage</div>
+            <div class="text-xs text-neutral-500 mt-1">#8BA88E</div>
+            <p class="text-xs text-neutral-600 mt-2">Dekorasi ruang rawat inap & terapi visual.</p>
+          </div>
+          <div class="p-4 border border-neutral-200 rounded-siloam bg-neutral-50 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full mb-3" style="background-color: #FDF8F0;"></div>
+            <div class="font-bold text-siloam-navy text-sm">Pure Dawn</div>
+            <div class="text-xs text-neutral-500 mt-1">#FDF8F0</div>
+            <p class="text-xs text-neutral-600 mt-2">Latar belakang lorong rawat jalan.</p>
+          </div>
+          <div class="p-4 border border-neutral-200 rounded-siloam bg-neutral-50 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full mb-3" style="background-color: #D4C5A9;"></div>
+            <div class="font-bold text-siloam-navy text-sm">Warm Stone</div>
+            <div class="text-xs text-neutral-500 mt-1">#D4C5A9</div>
+            <p class="text-xs text-neutral-600 mt-2">Lantai kayu sintetis & material alam.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Timeline (Reused from about.html for consistency) -->
+      <div class="bg-white rounded-siloam-xl shadow-siloam border border-neutral-200 p-8 md:p-12 mb-12" data-aos="fade-up">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-6 flex items-center gap-3">
+          <i data-lucide="trending-up" class="w-6 h-6 text-siloam-blue-light"></i> Linimasa Pembangunan & Investasi
+        </h2>
+        
+        <div class="max-w-3xl mx-auto">
+          <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-neutral-300">
+            <div class="flex flex-col sm:flex-row items-start sm:justify-between relative">
+              <div class="sm:w-5/12 sm:text-right mb-4 sm:mb-0 pr-0 sm:pr-8">
+                <span class="font-heading font-bold text-siloam-blue block">Fase 1: Studi Kelayakan</span>
+                <span class="text-xs text-neutral-500 font-medium">2024 Q3</span>
+              </div>
+              <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+              <div class="sm:w-5/12 pl-8 sm:pl-8">
+                <p class="text-sm text-neutral-600">Penyusunan preliminary feasibility study, validasi Rencana Anggaran Biaya (RAB), dan pemenuhan perizinan dasar pendirian rumah sakit.</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-start sm:justify-between relative">
+              <div class="sm:w-5/12 sm:text-right order-1 sm:order-3 pl-8 sm:pl-0 sm:pr-8 mb-4 sm:mb-0">
+                <p class="text-sm text-neutral-600">Pematangan lahan seluas 85m x 66m, penggalian basement gedung utama, groundbreaking, dan konstruksi pondasi dasar.</p>
+              </div>
+              <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+              <div class="sm:w-5/12 sm:text-left order-2 sm:order-1 pr-0 sm:pl-8">
+                <span class="font-heading font-bold text-siloam-blue block">Fase 2: Groundbreaking</span>
+                <span class="text-xs text-neutral-500 font-medium">2025 Q1</span>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-start sm:justify-between relative">
+              <div class="sm:w-5/12 sm:text-right mb-4 sm:mb-0 pr-0 sm:pr-8">
+                <span class="font-heading font-bold text-siloam-blue block">Fase 3: Struktur & IPAL</span>
+                <span class="text-xs text-neutral-500 font-medium">2026 Q2</span>
+              </div>
+              <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+              <div class="sm:w-5/12 pl-8 sm:pl-8">
+                <p class="text-sm text-neutral-600">Penyelesaian konstruksi 6 lantai utama, gedung parkir 5 lantai terpisah, instalasi kelistrikan (MEP), serta unit pengolahan limbah (IPAL).</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-start sm:justify-between relative">
+              <div class="sm:w-5/12 sm:text-right order-1 sm:order-3 pl-8 sm:pl-0 sm:pr-8 mb-4 sm:mb-0">
+                <p class="text-sm text-neutral-600">Finishing interior bertema premium hotel, pemasangan peralatan medis utama kedokteran senilai Rp 160 Miliar, dan uji coba sistem digital terintegrasi.</p>
+              </div>
+              <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+              <div class="sm:w-5/12 sm:text-left order-2 sm:order-1 pr-0 sm:pl-8">
+                <span class="font-heading font-bold text-siloam-blue block">Fase 4: Alat Medis & Launching</span>
+                <span class="text-xs text-neutral-500 font-medium">2027 Q3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-8 text-center" data-aos="fade-up">
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-siloam-navy text-white rounded-siloam px-8 py-3.5 hover:bg-siloam-blue hover:-translate-y-0.5 transition-all font-heading font-semibold shadow-md">
+          Hubungi Hubungan Investor & Kemitraan
+        </a>
       </div>
 
     </div>
@@ -278,9 +495,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -288,17 +503,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Ekosistem Digital | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -118,15 +118,106 @@
   </div>
 
   <section class="relative bg-tech-dark text-white pt-24 pb-32 overflow-hidden">
-    <div class="max-w-[85rem] mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div data-aos="fade-right">
+        <span class="inline-block bg-tech-blue/20 border border-tech-blue/40 text-tech-neon rounded-full px-4 py-1.5 text-xs font-heading font-semibold tracking-wider uppercase mb-6">
+          ★ TEKNOLOGI SMART HOSPITAL
+        </span>
         <h1 class="text-4xl md:text-5xl font-heading font-bold leading-tight mb-6">
-          Layanan Medis Lebih Cerdas
+          Layanan Medis Lebih Cerdas & Terintegrasi
         </h1>
-        <p class="text-neutral-400 text-lg mb-8 leading-relaxed">Ekosistem digital terintegrasi Ashodaya Hospital.</p>
+        <p class="text-neutral-400 text-lg mb-8 leading-relaxed">
+          Ashodaya Hospital mengadopsi platform digital komprehensif untuk memastikan alur pelayanan cepat, sistematis, dan bebas hambatan di setiap lini penanganan medis.
+        </p>
+        <a href="#aplikasi-pasien" class="px-6 py-3 bg-tech-blue text-white rounded-siloam font-heading font-semibold hover:bg-tech-neon hover:text-tech-dark transition-all text-sm inline-flex items-center gap-2">
+          Lihat Fitur Utama <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
       </div>
       <div data-aos="fade-left" class="relative flex justify-center">
-        <img src="assets/img/app_mockup.png" alt="Ashodaya Mobile App" class="relative z-10 w-[280px] rounded-[2rem] shadow-tech-glow animate-float">
+        <div class="absolute w-80 h-80 bg-tech-blue/10 rounded-full blur-[80px] -z-10 animate-pulse"></div>
+        <img src="assets/img/app_mockup.png" alt="Ashodaya Mobile App" class="relative z-10 w-[240px] sm:w-[280px] rounded-[2rem] shadow-tech-glow animate-float" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Aplikasi Pasien Section -->
+  <section id="aplikasi-pasien" class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">APLIKASI MOBILE</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy">Satu Aplikasi, Semua Solusi Kesehatan</h2>
+        <p class="text-neutral-600 mt-4">Kemudahan administrasi mandiri dari rumah guna meminimalkan waktu tunggu di rumah sakit.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up">
+          <i data-lucide="calendar" class="w-8 h-8 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Pendaftaran & Janji Dokter</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Cari jadwal dokter spesialis, lakukan janji temu, dan dapatkan nomor antrean secara online tanpa perlu antre manual.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up" data-aos-delay="50">
+          <i data-lucide="video" class="w-8 h-8 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Konsultasi Medis Online</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Lakukan telekonsultasi jarak jauh (telemedicine) dengan tim medis spesialis kami melalui panggilan video aman.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <i data-lucide="bed" class="w-8 h-8 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Cek Ketersediaan Kamar</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Pantau ketersediaan ranjang rawat inap (VIP, Kelas 1, 2, 3) secara real-time untuk transparansi dan persiapan.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+          <i data-lucide="pill" class="w-8 h-8 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Pemesanan & E-Pharmacy</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Tebus resep digital dokter langsung lewat aplikasi, dan obat akan dikirim langsung ke rumah pasien via logistik medis.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="alert-octagon" class="w-8 h-8 text-danger mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Panic Emergency Button</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Picu panggilan darurat IGD instan beserta pengiriman lokasi GPS pasien untuk respon cepat tim medis darurat.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 shadow-sm" data-aos="fade-up" data-aos-delay="250">
+          <i data-lucide="credit-card" class="w-8 h-8 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">E-Payment & Invoice</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Selesaikan pembayaran administrasi medis dan tebus resep secara cashless menggunakan integrasi e-wallet dan transfer bank.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFC Smart Card Section -->
+  <section class="py-20 bg-neutral-50 border-t border-b border-neutral-200">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div data-aos="fade-right" class="order-2 lg:order-1 flex justify-center">
+        <img src="assets/img/nfc_card.png" alt="Ashodaya NFC Smart Card" class="rounded-siloam-lg shadow-siloam max-w-sm w-full object-cover" loading="lazy">
+      </div>
+      <div data-aos="fade-left" class="order-1 lg:order-2">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">NFC PATIENT CARD</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-6">Ashodaya Smart Patient Card</h2>
+        <p class="text-neutral-600 leading-relaxed mb-4">Setiap pasien terdaftar mendapatkan kartu fisik berteknologi NFC (Near Field Communication) yang berintegrasi langsung dengan database rekam medis elektronik rumah sakit.</p>
+        <ul class="space-y-3 text-neutral-800 font-semibold text-sm">
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Tap & Go Check-in: Sentuhkan kartu di kiosk loket IGD/Poli untuk langsung mengantre tanpa formulir kertas.</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Akses Rekam Medis Instan: Mempercepat dokter membaca histori alergi, resep obat, dan riwayat tindakan medis.</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Keamanan Enkripsi: Data tersimpan secara aman dan terenkripsi menggunakan protokol privasi kesehatan terkini.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIS & ERP Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div data-aos="fade-right">
+        <span class="text-siloam-blue font-heading font-semibold tracking-widest text-xs uppercase block mb-2">BACKEND MANAGEMENT</span>
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-6">Sistem Informasi Manajemen Terpadu</h2>
+        <p class="text-neutral-600 leading-relaxed mb-4">Kami menunjang keandalan medis dengan implementasi Hospital Information System (HIS) dan Enterprise Resource Planning (ERP) di jajaran operasional belakang.</p>
+        <ul class="space-y-3 text-neutral-800 font-semibold text-sm">
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Paperless Administration: Mengurangi penggunaan kertas di semua lini administrasi dan penagihan.</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Manajemen Inventaris Farmasi Otomatis: Prediksi kebutuhan obat secara akurat demi meminimalkan kelangkaan stok obat krusial.</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0"></i> Dashboard Kinerja Real-time: Memudahkan dewan direksi memantau operasional, okupansi bed, dan alokasi SDM secara harian.</li>
+        </ul>
+      </div>
+      <div data-aos="fade-left" class="flex justify-center">
+        <img src="assets/img/digital_dashboard.png" alt="HIS/ERP Dashboard" class="rounded-siloam-lg shadow-siloam w-full object-cover" loading="lazy">
       </div>
     </div>
   </section>
@@ -171,9 +262,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -181,17 +270,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

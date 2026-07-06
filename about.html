@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Tentang Kami | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -118,22 +118,125 @@
   </div>
 
   <div class="bg-siloam-navy text-white py-16">
-    <div class="max-w-[85rem] mx-auto px-6 text-center" data-aos="fade-up">
-      <h1 class="text-4xl font-heading font-bold mb-4">Tentang Kami</h1>
-      <p class="text-lg text-white/80 max-w-2xl mx-auto">Mengenal lebih dekat visi, misi, dan arsitektur Ashodaya Hospital.</p>
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+      <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Tentang Kami</h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">Mengenal lebih dekat visi, misi, dan arsitektur Ashodaya Hospital.</p>
     </div>
   </div>
   
   <section class="py-20 bg-white">
-    <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div data-aos="fade-right">
         <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-6">Desain Arsitektur Modern & Humanis</h2>
-        <p class="text-neutral-600 leading-relaxed mb-4">Bangunan Ashodaya Hospital dirancang khusus untuk menciptakan lingkungan penyembuhan yang optimal. Setiap elemen struktural mematuhi standar keselamatan internasional dari Siloam Hospitals Group.</p>
-        <p class="text-neutral-600 leading-relaxed">Fasad bangunan memadukan keprofesionalan medis dengan estetika modern, memastikan sirkulasi udara yang baik dan pencahayaan alami yang melimpah ke setiap ruang perawatan.</p>
+        <p class="text-neutral-600 leading-relaxed mb-4">Bangunan Ashodaya Hospital dirancang khusus untuk menciptakan lingkungan penyembuhan yang optimal (healing environment). Struktur utama gedung didesain mengerucut ke atas (tapering upwards) guna memaksimalkan masuknya cahaya alami dan melambangkan pertumbuhan.</p>
+        <p class="text-neutral-600 leading-relaxed">Fasad bangunan memadukan keprofesionalan medis modern dengan sentuhan arsitektur khas Yogyakarta, menjadikannya landmark fungsional di kawasan Jetis. Setiap elemen struktural mematuhi regulasi Kemenkes RI dan standar operasional internasional dari Siloam Hospitals Group.</p>
       </div>
       <div data-aos="fade-left">
-        <img src="assets/img/tampak_depan.jpg" alt="Tampak Depan Arsitektur" class="rounded-siloam-lg shadow-siloam border border-neutral-200 w-full object-cover">
+        <img src="assets/img/tampak_depan.jpg" alt="Tampak Depan Arsitektur" class="rounded-siloam-lg shadow-siloam border border-neutral-200 w-full object-cover" loading="lazy">
         <p class="text-center text-sm text-neutral-500 mt-3 font-semibold">Tampak Depan (Fasad) Ashodaya Hospital</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi & Misi Section -->
+  <section class="py-20 bg-ashodaya-dawn border-t border-b border-ashodaya-stone/20">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="bg-white p-8 md:p-12 rounded-siloam shadow-siloam" data-aos="fade-up">
+        <span class="text-ashodaya-gold font-heading font-semibold tracking-widest text-xs uppercase block mb-3">Tujuan Luhur Kami</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-siloam-navy mb-6">Visi Utama</h2>
+        <p class="text-neutral-700 leading-relaxed text-lg italic font-serif">
+          "Menjadi rumah sakit rujukan premium terkemuka di Daerah Istimewa Yogyakarta yang mengintegrasikan standar medis internasional dengan kehangatan budaya lokal untuk menciptakan pelayanan kesehatan paripurna."
+        </p>
+      </div>
+      <div class="bg-white p-8 md:p-12 rounded-siloam shadow-siloam" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-ashodaya-gold font-heading font-semibold tracking-widest text-xs uppercase block mb-3">Langkah Nyata Kami</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-siloam-navy mb-6">Misi Kami</h2>
+        <ul class="space-y-4 text-sm sm:text-base text-neutral-600">
+          <li class="flex items-start gap-3"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0 mt-0.5"></i> Menyediakan pelayanan kesehatan berkualitas tinggi yang aman, ramah pasien, dan berpusat pada keselamatan jiwa.</li>
+          <li class="flex items-start gap-3"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0 mt-0.5"></i> Mengadopsi teknologi medis mutakhir dan sistem digital terintegrasi untuk mempercepat administrasi dan pengobatan.</li>
+          <li class="flex items-start gap-3"><i data-lucide="check" class="text-success w-5 h-5 flex-shrink-0 mt-0.5"></i> Mengembangkan sumber daya manusia medis yang profesional, kompeten, dan memiliki empati tinggi.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-4">Mengapa Memilih Ashodaya?</h2>
+        <p class="text-neutral-600">Tiga pilar utama pelayanan kami yang menjamin kenyamanan dan kesembuhan Anda.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up">
+          <i data-lucide="shield-check" class="w-10 h-10 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Standar Manajemen Siloam</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Dikelola langsung di bawah naungan Siloam Hospitals Group yang telah tepercaya mengoperasikan lebih dari 40 rumah sakit modern di Indonesia.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="100">
+          <i data-lucide="map-pin" class="w-10 h-10 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Lokasi Strategis & Akses Cepat</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Berlokasi sangat strategis di Bumijo, Jetis, Yogyakarta. Hanya berjarak 700 meter dari Tugu Jogja dan kurang dari 5 menit dari Stasiun Yogyakarta.</p>
+        </div>
+        <div class="p-6 rounded-siloam bg-neutral-50 border border-neutral-100 hover:shadow-siloam transition-all" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="flower" class="w-10 h-10 text-siloam-blue mb-4"></i>
+          <h3 class="font-heading font-bold text-lg text-siloam-navy mb-2">Healing Environment</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">Desain tata ruang, lobi premium, kolam air tenang, dan Healing Garden asri dirancang khusus untuk mengurangi stres pasien dan keluarga selama masa pemulihan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Proyek Section -->
+  <section class="py-20 bg-neutral-50 border-t border-neutral-200">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy mb-4">Milestone Pengembangan Proyek</h2>
+        <p class="text-neutral-600">Rencana linimasa pembangunan menuju peluncuran layanan penuh.</p>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-neutral-300">
+          <div class="flex flex-col sm:flex-row items-start sm:justify-between relative" data-aos="fade-up">
+            <div class="sm:w-5/12 sm:text-right mb-4 sm:mb-0 pr-0 sm:pr-8">
+              <span class="font-heading font-bold text-siloam-blue block">Fase 1: Studi Kelayakan</span>
+              <span class="text-xs text-neutral-500 font-medium">2024 Q3</span>
+            </div>
+            <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+            <div class="sm:w-5/12 pl-8 sm:pl-8">
+              <p class="text-sm text-neutral-600">Penyusunan preliminary feasibility study, validasi Rencana Anggaran Biaya (RAB), dan pemenuhan perizinan dasar pendirian rumah sakit.</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-start sm:justify-between relative" data-aos="fade-up">
+            <div class="sm:w-5/12 sm:text-right order-1 sm:order-3 pl-8 sm:pl-0 sm:pr-8 mb-4 sm:mb-0">
+              <p class="text-sm text-neutral-600">Pematangan lahan seluas 85m x 66m, penggalian basement gedung utama, groundbreaking, dan konstruksi pondasi dasar.</p>
+            </div>
+            <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+            <div class="sm:w-5/12 sm:text-left order-2 sm:order-1 pr-0 sm:pl-8">
+              <span class="font-heading font-bold text-siloam-blue block">Fase 2: Groundbreaking</span>
+              <span class="text-xs text-neutral-500 font-medium">2025 Q1</span>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-start sm:justify-between relative" data-aos="fade-up">
+            <div class="sm:w-5/12 sm:text-right mb-4 sm:mb-0 pr-0 sm:pr-8">
+              <span class="font-heading font-bold text-siloam-blue block">Fase 3: Struktur & MEP</span>
+              <span class="text-xs text-neutral-500 font-medium">2026 Q2</span>
+            </div>
+            <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+            <div class="sm:w-5/12 pl-8 sm:pl-8">
+              <p class="text-sm text-neutral-600">Penyelesaian konstruksi 6 lantai utama, gedung parkir 5 lantai terpisah, instalasi kelistrikan (MEP), serta unit pengolahan limbah (IPAL).</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-start sm:justify-between relative" data-aos="fade-up">
+            <div class="sm:w-5/12 sm:text-right order-1 sm:order-3 pl-8 sm:pl-0 sm:pr-8 mb-4 sm:mb-0">
+              <p class="text-sm text-neutral-600">Finishing interior bertema premium hotel, pemasangan peralatan medis utama kedokteran senilai Rp 160 Miliar, dan uji coba sistem digital terintegrasi.</p>
+            </div>
+            <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-ashodaya-gold border-2 border-white rounded-full -translate-x-2"></div>
+            <div class="sm:w-5/12 sm:text-left order-2 sm:order-1 pr-0 sm:pl-8">
+              <span class="font-heading font-bold text-siloam-blue block">Fase 4: Interior & Alkes</span>
+              <span class="text-xs text-neutral-500 font-medium">2027 Q1</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -178,9 +281,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -188,17 +289,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

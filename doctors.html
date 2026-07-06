@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Tim Dokter | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +82,7 @@
         <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -118,17 +118,23 @@
   </div>
 
   <div class="bg-siloam-navy text-white py-16">
-    <div class="max-w-[85rem] mx-auto px-6 text-center" data-aos="fade-up">
-      <h1 class="text-4xl font-heading font-bold mb-4">Tim Medis Spesialis</h1>
-      <p class="text-lg text-white/80 max-w-2xl mx-auto">Berdedikasi untuk memberikan pelayanan terbaik bagi Anda.</p>
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+      <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Tim Medis Spesialis</h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">Berdedikasi untuk memberikan pelayanan terbaik bagi Anda.</p>
     </div>
   </div>
 
   <section class="py-20 bg-neutral-50">
-    <div class="max-w-[85rem] mx-auto px-6">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-heading font-bold text-siloam-navy">Profil Dokter Spesialis Utama</h2>
+        <p class="text-neutral-600 mt-4">Jajaran dokter spesialis bersertifikat nasional dan internasional yang siap menangani kondisi medis Anda secara menyeluruh dan integratif.</p>
+      </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="bg-white rounded-siloam shadow-siloam border border-neutral-200 overflow-hidden hover:-translate-y-1 transition-all" data-aos="fade-up">
-          <img src="assets/img/doctor_profile.png" alt="dr. Arief" class="w-full h-64 object-cover object-top">
+          <img src="assets/img/doctor_profile.png" alt="dr. Arief" class="w-full h-64 object-cover object-top" loading="lazy">
           <div class="p-6 text-center">
             <span class="bg-siloam-blue/10 text-siloam-blue rounded-full px-3 py-1 text-xs font-semibold uppercase block w-max mx-auto mb-3">Spesialis Penyakit Dalam</span>
             <h3 class="font-heading font-bold text-lg text-siloam-navy mb-1">dr. Arief Wibowo, Sp.PD</h3>
@@ -136,7 +142,42 @@
             <a href="contact.html" class="bg-siloam-blue hover:bg-siloam-navy text-white font-heading font-semibold text-sm rounded-siloam w-full py-2 block text-center transition-colors">Buat Janji</a>
           </div>
         </div>
+        <div class="bg-white rounded-siloam shadow-siloam border border-neutral-200 overflow-hidden hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/doctor_profile.png" alt="dr. Dian" class="w-full h-64 object-cover object-top" loading="lazy">
+          <div class="p-6 text-center">
+            <span class="bg-siloam-blue/10 text-siloam-blue rounded-full px-3 py-1 text-xs font-semibold uppercase block w-max mx-auto mb-3">Spesialis Kebidanan (OG)</span>
+            <h3 class="font-heading font-bold text-lg text-siloam-navy mb-1">dr. Dian Safitri, Sp.OG</h3>
+            <p class="text-xs text-neutral-500 mb-4">Pengalaman: 12 Tahun</p>
+            <a href="contact.html" class="bg-siloam-blue hover:bg-siloam-navy text-white font-heading font-semibold text-sm rounded-siloam w-full py-2 block text-center transition-colors">Buat Janji</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-siloam shadow-siloam border border-neutral-200 overflow-hidden hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/img/doctor_profile.png" alt="dr. Indah" class="w-full h-64 object-cover object-top" loading="lazy">
+          <div class="p-6 text-center">
+            <span class="bg-siloam-blue/10 text-siloam-blue rounded-full px-3 py-1 text-xs font-semibold uppercase block w-max mx-auto mb-3">Spesialis Kesehatan Anak</span>
+            <h3 class="font-heading font-bold text-lg text-siloam-navy mb-1">dr. Indah Lestari, Sp.A</h3>
+            <p class="text-xs text-neutral-500 mb-4">Pengalaman: 10 Tahun</p>
+            <a href="contact.html" class="bg-siloam-blue hover:bg-siloam-navy text-white font-heading font-semibold text-sm rounded-siloam w-full py-2 block text-center transition-colors">Buat Janji</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-siloam shadow-siloam border border-neutral-200 overflow-hidden hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/img/doctor_profile.png" alt="dr. Budi" class="w-full h-64 object-cover object-top" loading="lazy">
+          <div class="p-6 text-center">
+            <span class="bg-siloam-blue/10 text-siloam-blue rounded-full px-3 py-1 text-xs font-semibold uppercase block w-max mx-auto mb-3">Spesialis Bedah Umum</span>
+            <h3 class="font-heading font-bold text-lg text-siloam-navy mb-1">dr. Budi Santoso, Sp.B</h3>
+            <p class="text-xs text-neutral-500 mb-4">Pengalaman: 14 Tahun</p>
+            <a href="contact.html" class="bg-siloam-blue hover:bg-siloam-navy text-white font-heading font-semibold text-sm rounded-siloam w-full py-2 block text-center transition-colors">Buat Janji</a>
+          </div>
+        </div>
       </div>
+      
+      <div class="mt-16 text-center" data-aos="fade-up">
+        <p class="text-neutral-600 mb-4 text-sm sm:text-base">Mencari spesialisasi poliklinik lain atau jadwal lengkap dokter?</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-siloam-navy text-white rounded-siloam px-8 py-3.5 hover:bg-siloam-blue hover:-translate-y-0.5 transition-all font-heading font-semibold shadow-md">
+          Hubungi Layanan Informasi Pasien
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -180,9 +221,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -190,17 +229,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {

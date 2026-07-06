@@ -10,9 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Lokasi & Kontak | Ashodaya Hospital">
+  <meta property="og:description" content="Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, Jogja.">
+  <meta property="og:image" content="assets/img/hospital_lobby.png">
+  <meta property="og:type" content="website">
 
   <script>
     tailwind.config = {
@@ -78,11 +83,7 @@
         <a href="contact.html" class="text-siloam-blue hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
       </div>
 
-      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
-        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
-          Buat Janji
-        </a>
-      </div>
+      <div class="hidden lg:block w-36"></div> <!-- Spacer to balance alignment since right CTA is removed -->
 
       <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
         <span class="font-heading font-semibold text-sm">Menu</span>
@@ -118,10 +119,81 @@
   </div>
 
   <div class="bg-siloam-navy text-white py-16">
-    <div class="max-w-[85rem] mx-auto px-6 text-center" data-aos="fade-up">
-      <h1 class="text-4xl font-heading font-bold mb-4">Hubungi Kami</h1>
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+      <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Lokasi & Kontak</h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">Hubungi pendaftaran pasca-rancangan atau temukan peta lokasi kami di Yogyakarta.</p>
     </div>
   </div>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Contact Details & Form -->
+      <div data-aos="fade-right">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy mb-6">Informasi Kontak & Jam Operasional</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div class="p-4 border border-neutral-200 rounded-siloam">
+            <span class="text-xs text-neutral-500 uppercase font-semibold">Telepon IGD 24 Jam</span>
+            <p class="text-lg font-heading font-bold text-danger mt-1">0274-123-4567</p>
+          </div>
+          <div class="p-4 border border-neutral-200 rounded-siloam">
+            <span class="text-xs text-neutral-500 uppercase font-semibold">Pendaftaran Pasien</span>
+            <p class="text-lg font-heading font-bold text-siloam-blue mt-1">0274-123-4568</p>
+          </div>
+        </div>
+
+        <h3 class="font-heading font-bold text-siloam-navy mb-4">Formulir Permintaan Janji Dokter (Simulasi)</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-semibold text-neutral-700 mb-1">Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap Anda" class="w-full px-4 py-2.5 rounded-siloam border border-neutral-300 focus:outline-none focus:border-siloam-blue text-sm">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-neutral-700 mb-1">Nomor Handphone</label>
+            <input type="tel" placeholder="Contoh: 08123456789" class="w-full px-4 py-2.5 rounded-siloam border border-neutral-300 focus:outline-none focus:border-siloam-blue text-sm">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-neutral-700 mb-1">Pilih Poliklinik</label>
+            <select class="w-full px-4 py-2.5 rounded-siloam border border-neutral-300 focus:outline-none focus:border-siloam-blue text-sm">
+              <option>Poli Umum</option>
+              <option>Poli Internis</option>
+              <option>Poli Bedah</option>
+              <option>Poli Kandungan</option>
+              <option>Poli Anak</option>
+              <option>Poli THT</option>
+              <option>Poli Syaraf</option>
+              <option>Poli Gigi</option>
+              <option>Poli Mata</option>
+            </select>
+          </div>
+          <button type="button" class="w-full py-3 bg-siloam-blue text-white rounded-siloam font-heading font-semibold text-sm hover:bg-siloam-navy transition-all">
+            Kirim Permintaan Janji
+          </button>
+        </form>
+      </div>
+
+      <!-- Map & Leaflet -->
+      <div data-aos="fade-left" class="space-y-6">
+        <h2 class="text-2xl font-heading font-bold text-siloam-navy">Peta Lokasi Bumijo</h2>
+        <p class="text-sm text-neutral-600">Jl. Tentara Pelajar, Kel. Bumijo, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55231 (Dekat Tugu Yogyakarta & Stasiun Tugu).</p>
+        <div id="map" class="w-full h-[250px] sm:h-[400px] rounded-siloam border border-neutral-300 relative z-10 shadow-sm"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function pageInit() {{
+      const map = L.map('map').setView([-7.7828, 110.3659], 16);
+      L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+        attribution: '&copy; OpenStreetMap contributors'
+      }}).addTo(map);
+
+      L.marker([-7.7828, 110.3659]).addTo(map)
+        .bindPopup('<b>Ashodaya Hospital</b><br>Rencana Lokasi Pembangunan.')
+        .openPopup();
+    }}
+  </script>
 
   <footer class="bg-siloam-navy text-white/80 border-t border-white/5 pt-16 pb-8 mt-auto">
     <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -163,7 +235,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
@@ -173,17 +244,19 @@
       const btnClose = document.getElementById('btn-close');
       const drawer = document.getElementById('mobile-drawer');
       
-      btnOpen.addEventListener('click', () => {
-        drawer.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      btnClose.addEventListener('click', () => {
-        drawer.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-      });
+      if (btnOpen && btnClose && drawer) {
+        btnOpen.addEventListener('click', () => {
+          drawer.classList.remove('translate-x-full');
+          document.body.style.overflow = 'hidden';
+        });
+        
+        btnClose.addEventListener('click', () => {
+          drawer.classList.add('translate-x-full');
+          document.body.style.overflow = '';
+        });
+      }
 
-      AOS.init({ duration: 750, once: true, offset: 60 });
+      AOS.init({ duration: 750, once: true, offset: 30 });
       lucide.createIcons();
       
       if (typeof pageInit === 'function') {
