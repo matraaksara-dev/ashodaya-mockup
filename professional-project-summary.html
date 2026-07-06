@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Project Summary - Ashodaya Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            siloam: { blue: '#005EB8', 'blue-light': '#00AEEF', navy: '#003087', 'navy-dark': '#00205F' },
+            ashodaya: { gold: '#F5A623', sage: '#8BA88E', dawn: '#FDF8F0', stone: '#D4C5A9' }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* A4 Print Optimization CSS */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #525659;
+      font-family: 'Inter', sans-serif;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .a4-page {
+      width: 210mm;
+      height: 297mm;
+      background: white;
+      margin: 0 auto 10mm auto;
+      padding: 20mm 18mm;
+      box-sizing: border-box;
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .a4-page:last-child {
+      page-break-after: auto;
+      margin-bottom: 0;
+    }
+    @media print {
+      body {
+        background: white;
+      }
+      .a4-page {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body class="font-body text-neutral-800 antialiased">
+
+  <!-- ==================== PAGE 1: COVER ==================== -->
+  <div class="a4-page justify-between text-white" style="background-color: #003087;">
+    <!-- Top Branding -->
+    <div class="flex justify-between items-center w-full border-b border-white/10 pb-6">
+      <div class="flex flex-col">
+        <span class="font-heading font-bold text-lg tracking-wider">ASHODAYA HOSPITAL</span>
+        <span class="text-[9px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
+      </div>
+      <div class="text-[10px] uppercase tracking-widest text-white/50 font-bold border border-white/20 px-3 py-1 rounded">
+        Proposal Investasi
+      </div>
+    </div>
+
+    <!-- Main Title -->
+    <div class="text-center my-auto space-y-8">
+      <div class="inline-block px-4 py-1.5 bg-ashodaya-gold text-siloam-navy font-heading font-bold text-xs rounded-full uppercase tracking-widest mb-2 shadow-md">
+        STRICTLY CONFIDENTIAL
+      </div>
+      <h1 class="text-5xl font-serif font-bold leading-tight tracking-wide text-white">
+        EXECUTIVE<br>PROJECT SUMMARY
+      </h1>
+      <div class="w-24 h-1 bg-ashodaya-gold mx-auto"></div>
+      <p class="text-base text-white/80 max-w-lg mx-auto font-light leading-relaxed">
+        Perencanaan Strategis Pembangunan &amp; Komparasi Kemitraan Investasi Rumah Sakit Rujukan Premium Ashodaya Hospital Yogyakarta
+      </p>
+    </div>
+
+    <!-- Footer info -->
+    <div class="border-t border-white/10 pt-6 flex justify-between items-end text-xs text-white/60">
+      <div>
+        <p class="font-bold text-white">Yogyakarta, Indonesia</p>
+        <p>Juli 2026 (Fase Finalisasi Dokumen)</p>
+      </div>
+      <div class="text-right">
+        <p class="font-bold text-white uppercase tracking-wider">Divisi Kemitraan Strategis</p>
+        <p>Siloam Hospitals Group</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2: BACKGROUND & PHILOSOPHY ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">1. Latar Belakang &amp; Filosofi Proyek</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 02</span>
+      </div>
+
+      <div class="space-y-6 text-sm text-neutral-700 leading-relaxed text-justify">
+        <p>
+          <strong class="text-siloam-navy block text-base mb-1">Visi Pengembangan Strategis Regional</strong>
+          Daerah Istimewa Yogyakarta memegang posisi sentral sebagai pusat pendidikan, budaya, dan destinasi pariwisata terkemuka di Indonesia. Perkembangan demografis ini diiringi eskalasi kebutuhan signifikan akan infrastruktur layanan medis tersier yang komprehensif, andal, dan berstandar internasional. Menjawab urgensi tersebut, Siloam Hospitals Group memprakarsai proyek pembangunan <strong>Ashodaya Hospital</strong> sebagai fasilitas rujukan premium utama di wilayah Yogyakarta.
+        </p>
+
+        <p>
+          <strong class="text-siloam-navy block text-base mb-1">Filosofi Nomenklatur Ashodaya</strong>
+          Nomenklatur "Ashodaya" direkayasa dari konjungsi bahasa Sanskerta: <em>Asha</em> (Harapan) dan <em>Udaya</em> (Terbit atau Kebangkitan). Nama ini memanifestasikan komitmen kami dalam mentransformasi paradigma perawatan klinis—dari sekadar kuratif menjadi pusat pemulihan holistik (<em>healing environment</em>). Dengan mengusung kredo utama <strong>"Meletakkan seluruh kesedihan di belakang,"</strong> Ashodaya Hospital dirancang tidak hanya untuk menyembuhkan raga, tetapi juga memberikan ketenangan spiritual bagi pasien dan keluarga.
+        </p>
+
+        <p>
+          <strong class="text-siloam-navy block text-base mb-1">Integrasi Standar Siloam Hospitals</strong>
+          Sebagai bagian dari Siloam Hospitals Network, Ashodaya Hospital akan mengadopsi standar internasional Joint Commission International (JCI) dalam keselamatan pasien, tata kelola klinis, serta efisiensi operasional berbasis teknologi digital terintegrasi. Hal ini menjamin tingkat kepercayaan tinggi dari para pemangku kepentingan dan investor mitra strategis.
+        </p>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 3: KEY HIGHLIGHTS ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">2. Parameter Utama Proyek (Key Highlights)</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 03</span>
+      </div>
+
+      <p class="text-sm text-neutral-600 mb-6 leading-relaxed">
+        Berikut adalah visualisasi indikator-indikator kuantitatif dan parameter utama rencana pembangunan fisik serta nilai investasi strategis proyek Ashodaya Hospital.
+      </p>
+
+      <!-- Grid Cards -->
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="bg-siloam-navy text-white p-5 rounded-lg shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] text-white/60 uppercase tracking-widest font-semibold">Total Nilai Investasi</div>
+            <div class="text-2xl font-bold text-ashodaya-gold mt-1">Rp 466,14 M</div>
+          </div>
+          <div class="text-[10px] text-white/50 border-t border-white/10 pt-2 mt-4">Termasuk PPN 11% (CAPEX &amp; OPEX Awal)</div>
+        </div>
+
+        <div class="bg-siloam-blue text-white p-5 rounded-lg shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] text-white/60 uppercase tracking-widest font-semibold">Kapasitas Tempat Tidur</div>
+            <div class="text-2xl font-bold text-white mt-1">150 Beds</div>
+          </div>
+          <div class="text-[10px] text-white/50 border-t border-white/10 pt-2 mt-4">VIP &amp; Suite, Kelas 1/2/3, &amp; Ruang ICU</div>
+        </div>
+
+        <div class="bg-neutral-50 border border-neutral-200 p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">Spesifikasi Lahan</div>
+            <div class="text-2xl font-bold text-siloam-navy mt-1">5.610 m²</div>
+          </div>
+          <div class="text-[10px] text-neutral-400 border-t border-neutral-200 pt-2 mt-4">Dimensi Tapak: 85 meter &times; 66 meter</div>
+        </div>
+
+        <div class="bg-neutral-50 border border-neutral-200 p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">Struktur Gedung RS</div>
+            <div class="text-2xl font-bold text-siloam-navy mt-1">7 Tingkat</div>
+          </div>
+          <div class="text-[10px] text-neutral-400 border-t border-neutral-200 pt-2 mt-4">1 Lantai Basement &amp; 6 Lantai Utama</div>
+        </div>
+      </div>
+
+      <!-- Detail list -->
+      <div class="space-y-3 text-sm border border-neutral-200 p-4 rounded-lg bg-neutral-50">
+        <div class="flex justify-between py-1.5 border-b border-neutral-200">
+          <span class="text-neutral-600">Luas Bangunan Tapak Utama RS (Footprint)</span>
+          <span class="font-bold text-siloam-navy">2.167 m²</span>
+        </div>
+        <div class="flex justify-between py-1.5 border-b border-neutral-200">
+          <span class="text-neutral-600">Luas Gedung Parkir Terpisah (Footprint)</span>
+          <span class="font-bold text-siloam-navy">1.305 m²</span>
+        </div>
+        <div class="flex justify-between py-1.5 border-b border-neutral-200">
+          <span class="text-neutral-600">Area Terbuka Hijau &amp; Healing Garden</span>
+          <span class="font-bold text-success">1.139 m²</span>
+        </div>
+        <div class="flex justify-between py-1.5">
+          <span class="text-neutral-600">Kapasitas Gedung Parkir Dedikasi</span>
+          <span class="font-bold text-siloam-navy">111 Mobil / 350 Motor</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 4: SITE PLAN ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">3. Konfigurasi Lahan &amp; Site Plan</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 04</span>
+      </div>
+
+      <p class="text-sm text-neutral-700 mb-6 leading-relaxed text-justify">
+        Lahan proyek seluas 5.610 m² terletak strategis dengan orientasi menghadap ke arah jalan arteri utama (akses depan). Guna meminimalkan transmisi bising dari jalan raya ke area perawatan pasien dan menjaga sterilitas operasional, arsitektur tapak memisahkan secara tegas zona pelayanan klinis (Gedung Utama) di bagian depan-tengah dengan infrastruktur pendukung (Gedung Parkir &amp; IPAL) di bagian belakang tapak.
+      </p>
+
+      <!-- CSS Site Plan Diagram -->
+      <div class="border-2 border-neutral-300 rounded-lg p-4 bg-neutral-50 relative mx-auto max-w-md" style="aspect-ratio: 85/66;">
+        <!-- Jalan raya label (atas = depan) -->
+        <div class="text-center text-[9px] font-bold text-neutral-500 uppercase tracking-widest mb-2 border-b border-neutral-200 pb-1">
+          ↑ AKSES UTAMA PUBLIK (JL. TENTARA PELAJAR) ↑
+        </div>
+        
+        <div class="h-[75%] flex flex-col gap-2">
+          <!-- Row 1: Gedung RS (posisi tengah-depan) -->
+          <div class="flex gap-2 justify-center" style="flex: 3;">
+            <div class="flex-1 bg-siloam-navy rounded-lg flex flex-col items-center justify-center text-white p-3 shadow-md">
+              <i data-lucide="hospital" class="w-6 h-6 mb-1 text-ashodaya-gold"></i>
+              <div class="font-bold text-[10px] text-center uppercase tracking-wider">Gedung RS Utama</div>
+              <div class="text-[8px] text-white/70 text-center">64,3m &times; 33,7m</div>
+              <div class="text-[8px] text-white/70 text-center">6 Lantai + Basement</div>
+            </div>
+          </div>
+          
+          <!-- Row 2: Healing Garden -->
+          <div class="flex gap-2" style="flex: 1.5;">
+            <div class="bg-success/15 border border-success/30 rounded-lg flex-1 flex items-center justify-center p-1.5">
+              <span class="text-success font-bold text-[9px] uppercase tracking-wider">🌿 Healing Garden (17m &times; 67m)</span>
+            </div>
+          </div>
+
+          <!-- Row 3: Gedung Parkir -->
+          <div class="flex gap-2 justify-center" style="flex: 2;">
+            <div class="flex-1 bg-neutral-600 rounded-lg flex flex-col items-center justify-center text-white p-2 shadow-md">
+              <i data-lucide="car" class="w-5 h-5 mb-1 text-white/80"></i>
+              <div class="font-bold text-[9px] text-center uppercase tracking-wider">Gedung Parkir &amp; IPAL</div>
+              <div class="text-[8px] text-white/70 text-center">43,5m &times; 30m | 5 Lantai</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Jalan keliling indicator -->
+        <div class="absolute bottom-1 right-2 text-[8px] text-neutral-400">Jalan Keliling Pemadam Kebakaran &amp; Ambulans (Lebar 7m)</div>
+      </div>
+
+      <div class="mt-6 text-xs text-neutral-500 space-y-1 text-justify">
+        <p><strong>Aksesibilitas &amp; Logistik:</strong> Jalan keliling selebar 7 meter mempermudah akses kendaraan gawat darurat (Ambulans) dan armada pemadam kebakaran (fire rescue) mengitari seluruh sisi tapak bangunan tanpa hambatan.</p>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 5: FLOOR DISTRIBUTION 1 ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">4. Spesifikasi Fungsi Lantai Gedung Utama (Lt. 3 - 6)</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 05</span>
+      </div>
+
+      <p class="text-sm text-neutral-600 mb-6 leading-relaxed">
+        Gedung Rumah Sakit Utama dirancang menggunakan metode pemetaan klinis yang efisien. Rawat inap eksklusif dan layanan intensif dialokasikan pada lantai atas demi menjamin tingkat ketenangan pasien yang optimal.
+      </p>
+
+      <!-- Floor Stack 3-6 -->
+      <div class="space-y-4 max-w-xl mx-auto">
+        <!-- Lantai 6 -->
+        <div class="border border-neutral-200 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-neutral-800 text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 6</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">10 Beds Capacity</span>
+          </div>
+          <div class="p-4 bg-neutral-50 text-xs text-neutral-700 space-y-1">
+            <p><strong>Layanan Utama:</strong> Intensive Care Unit (ICU), Neonatal ICU (NICU), Pediatric ICU (PICU).</p>
+            <p><strong>Fasilitas Lain:</strong> Rooftop area, Mechanical room (Genset &amp; AC central penunjang).</p>
+          </div>
+        </div>
+
+        <!-- Lantai 5 -->
+        <div class="border border-ashodaya-gold/40 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-ashodaya-gold text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 5</span>
+            <span class="text-xs bg-white/25 px-2 py-0.5 rounded font-bold">24 Beds Capacity</span>
+          </div>
+          <div class="p-4 bg-ashodaya-gold/5 text-xs text-neutral-700 space-y-1">
+            <p><strong>Layanan Utama:</strong> Rawat Inap VIP &amp; Suite Room (Dimensi Kamar: 3,45m &times; 5,5m per unit).</p>
+            <p><strong>Fasilitas Lain:</strong> Nurse station premium, lounge keluarga pasien eksklusif.</p>
+          </div>
+        </div>
+
+        <!-- Lantai 4 -->
+        <div class="border border-siloam-blue/40 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-siloam-blue text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 4</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">36 Beds Capacity</span>
+          </div>
+          <div class="p-4 bg-siloam-blue/5 text-xs text-neutral-700 space-y-1">
+            <p><strong>Layanan Utama:</strong> Rawat Inap Kelas 1 (Kapasitas: 2 beds per unit kamar perawatan).</p>
+            <p><strong>Fasilitas Lain:</strong> Koridor akses pemisahan steril untuk staf medis.</p>
+          </div>
+        </div>
+
+        <!-- Lantai 3 -->
+        <div class="border border-siloam-blue/30 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-siloam-blue/80 text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 3</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">40 Beds Capacity</span>
+          </div>
+          <div class="p-4 bg-siloam-blue/5 text-xs text-neutral-700 space-y-1">
+            <p><strong>Layanan Utama:</strong> Rawat Inap Kelas 2 (Kapasitas: 4 beds per unit kamar perawatan).</p>
+            <p><strong>Fasilitas Lain:</strong> Akses lift pasien darurat, area linen central.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 6: FLOOR DISTRIBUTION 2 ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">5. Spesifikasi Fungsi Lantai Gedung Utama (B - Lt. 2)</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 06</span>
+      </div>
+
+      <p class="text-sm text-neutral-600 mb-6 leading-relaxed">
+        Lantai dasar dan rubanah dialokasikan sebagai pusat lalu lintas tinggi, penunjang klinis darurat, penunjang operasional logistik, dan diagnostik radiologi.
+      </p>
+
+      <!-- Floor Stack B-2 -->
+      <div class="space-y-4 max-w-xl mx-auto">
+        <!-- Lantai 2 -->
+        <div class="border border-siloam-blue/20 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-siloam-blue/60 text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 2</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">40 Beds Capacity</span>
+          </div>
+          <div class="p-4 bg-siloam-blue/5 text-xs text-neutral-700 space-y-1">
+            <p><strong>Layanan Utama:</strong> Rawat Inap Kelas 3 (Kapasitas: 6 beds per unit kamar, standar regulasi BPJS KRIS).</p>
+            <p><strong>Fasilitas Penunjang:</strong> Hemodialisa unit, medical check-up premium area.</p>
+          </div>
+        </div>
+
+        <!-- Lantai 1 -->
+        <div class="border border-success/40 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-success/80 text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Lantai 1</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">Fasilitas Utama</span>
+          </div>
+          <div class="p-4 bg-success/5 text-xs text-neutral-700 space-y-1">
+            <p><strong>Unit Gawat Darurat:</strong> IGD Terpadu 24 Jam dengan akses ramp darurat independen.</p>
+            <p><strong>Diagnostic &amp; Surgery:</strong> Radiologi utama, Kamar Operasi Modular (2 Operating Rooms/OR), Laboratorium.</p>
+            <p><strong>Rawat Jalan:</strong> 9 Poliklinik spesialis rawat jalan terpadu, area Lobi, Admisi, &amp; Farmasi Pusat.</p>
+          </div>
+        </div>
+
+        <!-- Basement -->
+        <div class="border border-neutral-300 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-neutral-400 text-white px-4 py-3 flex justify-between items-center">
+            <span class="font-heading font-bold text-sm uppercase tracking-wider">Basement (Rubanah)</span>
+            <span class="text-xs bg-white/20 px-2 py-0.5 rounded font-bold">Area Logistik</span>
+          </div>
+          <div class="p-4 bg-neutral-50 text-xs text-neutral-700 space-y-1">
+            <p><strong>Fasilitas Penunjang:</strong> Area parkir khusus staf, laundry central, dapur umum gizi RS.</p>
+            <p><strong>Utilitas:</strong> Central Sterile Services Department (CSSD), mechanical room, IPAL, generator cadangan listrik utama.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 7: PARKING FACILITY ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">6. Infrastruktur Penunjang: Gedung Parkir Terpisah</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 07</span>
+      </div>
+
+      <p class="text-sm text-neutral-700 mb-6 leading-relaxed text-justify">
+        Untuk menjamin ketenangan lingkungan klinis dan menghindari kepadatan lalu lintas di depan lobi rumah sakit, didirikan infrastruktur pendukung berupa gedung parkir mandiri setinggi 5 lantai di bagian belakang tapak. Gedung parkir ini memuat fasilitas IPAL utama di lantai dasar, ramp sirkulasi melingkar di poros tengah, serta kantin non-klinis di lantai atap.
+      </p>
+
+      <!-- Parking Table -->
+      <div class="border border-neutral-200 rounded-lg overflow-hidden mb-6">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-neutral-800 text-white font-heading">
+              <th class="py-2.5 px-3 w-16">Lantai</th>
+              <th class="py-2.5 px-3">Fungsi &amp; Pembagian Kapasitas</th>
+              <th class="py-2.5 px-3 text-center w-24">Luas (m²)</th>
+              <th class="py-2.5 px-3 text-center w-24">Keterangan</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-200 bg-white">
+            <tr class="bg-neutral-50">
+              <td class="py-2 px-3 font-bold text-neutral-700">Lantai 1</td>
+              <td class="py-2 px-3 font-medium">Unit Pengolahan Limbah IPAL Utama + Pos Penjagaan Keamanan</td>
+              <td class="py-2 px-3 text-center">1.305</td>
+              <td class="py-2 px-3 text-center text-neutral-500">IPAL: 17,5m &times; 8m</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 2</td>
+              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2 px-3 text-center">1.305</td>
+              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 3</td>
+              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2 px-3 text-center">1.305</td>
+              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 4</td>
+              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2 px-3 text-center">1.305</td>
+              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 110 Motor</td>
+            </tr>
+            <tr class="bg-success/5">
+              <td class="py-2 px-3 font-bold text-success">Lantai 5</td>
+              <td class="py-2 px-3 font-medium">Kantin Umum, Kafetaria Karyawan &amp; Area Istirahat Publik</td>
+              <td class="py-2 px-3 text-center">1.305</td>
+              <td class="py-2 px-3 text-center text-success">Non-klinis</td>
+            </tr>
+          </tbody>
+          <tfoot class="bg-neutral-100 font-bold border-t border-neutral-300">
+            <tr>
+              <td colspan="2" class="py-2.5 px-3 text-right">Total Kapasitas Lahan Gedung Parkir</td>
+              <td class="py-2.5 px-3 text-center text-siloam-blue">6.525 m²</td>
+              <td class="py-2.5 px-3 text-center text-siloam-navy text-[10px]">111 Mobil | 350 Motor</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 8: RAB KONSTRUKSI ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">7. Rencana Anggaran Biaya (RAB) - Struktur &amp; Sipil</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 08</span>
+      </div>
+
+      <p class="text-sm text-neutral-700 mb-6 leading-relaxed">
+        Investasi konstruksi dan arsitektur dialokasikan secara presisi per fase. Di bawah ini adalah rincian kebutuhan biaya awal untuk pekerjaan persiapan lahan hingga konstruksi sipil utama per lantai.
+      </p>
+
+      <!-- RAB Table Part 1 -->
+      <div class="border border-neutral-200 rounded-lg overflow-hidden">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-siloam-navy text-white font-heading">
+              <th class="py-2.5 px-3 w-12 text-center">No.</th>
+              <th class="py-2.5 px-3">Uraian Pekerjaan Struktur &amp; Sipil</th>
+              <th class="py-2.5 px-3 text-right w-44">Estimasi Biaya (Rp)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-200 bg-white">
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">1</td>
+              <td class="py-2 px-3">Pekerjaan Persiapan Lahan, Penggalian, &amp; Pematangan Tapak</td>
+              <td class="py-2 px-3 text-right font-medium">2.000.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">2</td>
+              <td class="py-2 px-3">Perencanaan Arsitektur, Pengawasan Teknis, &amp; Legalitas Perizinan</td>
+              <td class="py-2 px-3 text-right font-medium">5.000.000.000</td>
+            </tr>
+            <tr class="bg-siloam-blue/5 font-bold">
+              <td class="py-2 px-3 text-center text-siloam-navy">3</td>
+              <td class="py-2 px-3 text-siloam-navy">Pekerjaan Konstruksi &amp; Arsitektur Gedung RS Utama (Sub-total)</td>
+              <td class="py-2 px-3 text-right text-siloam-blue">145.154.800.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3a</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur Basement (Rubanah)</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">46.577.200.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3b</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 1</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">26.648.900.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3c</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 2</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">19.927.800.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3d</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 3</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3e</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 4</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3f</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 5</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+            </tr>
+            <tr class="hover:bg-neutral-50 text-neutral-600">
+              <td class="py-1.5 px-3 text-center text-[10px]">3g</td>
+              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 6</td>
+              <td class="py-1.5 px-3 text-right text-[10px]">3.131.800.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">4</td>
+              <td class="py-2 px-3">Pekerjaan Mekanikal, Elektrikal, Lift Pasien, &amp; Genset Utama</td>
+              <td class="py-2 px-3 text-right font-medium">5.900.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">5</td>
+              <td class="py-2 px-3">Pekerjaan Interior Eksekutif &amp; Peralatan Non-Medis Gedung</td>
+              <td class="py-2 px-3 text-right font-medium">5.000.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-[10px] text-neutral-400 mt-4">*Biaya dalam tabel merupakan representasi CAPEX sipil awal dan belum dikonsolidasikan dengan PPN 11%.</p>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 9: RAB ALKES & TOTAL ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">8. RAB Peralatan Medis &amp; Proyeksi Finansial Total</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 09</span>
+      </div>
+
+      <!-- Table Part 2 -->
+      <div class="border border-neutral-200 rounded-lg overflow-hidden mb-6">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-siloam-navy text-white font-heading">
+              <th class="py-2.5 px-3 w-12 text-center">No.</th>
+              <th class="py-2.5 px-3">Uraian Pekerjaan Penunjang &amp; Akuisisi Alkes</th>
+              <th class="py-2.5 px-3 text-right w-44">Estimasi Biaya (Rp)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-200 bg-white">
+            <tr class="bg-ashodaya-gold/10 font-bold">
+              <td class="py-2 px-3 text-center text-ashodaya-gold">6</td>
+              <td class="py-2 px-3 text-neutral-800">Peralatan Medis Kedokteran Premium (ALKES)</td>
+              <td class="py-2 px-3 text-right text-ashodaya-gold">160.000.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">7</td>
+              <td class="py-2 px-3">Sistem Pengolahan Air Kotor, Air Hujan, &amp; Jaringan Hidran Kebakaran</td>
+              <td class="py-2 px-3 text-right font-medium">1.500.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">8</td>
+              <td class="py-2 px-3">Sistem Pengolahan Air Bersih &amp; Jaringan Distribusi Oksigen Medis</td>
+              <td class="py-2 px-3 text-right font-medium">2.300.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">9</td>
+              <td class="py-2 px-3">Pekerjaan Instalasi Pengolahan Air Limbah Klinis (IPAL RS)</td>
+              <td class="py-2 px-3 text-right font-medium">5.500.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">10</td>
+              <td class="py-2 px-3">Instalasi Pengolahan Limbah Padat &amp; Penampung Limbah Berbahaya B3</td>
+              <td class="py-2 px-3 text-right font-medium">3.600.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">11</td>
+              <td class="py-2 px-3">Instalasi Gas Medis Pusat (Oksigen, Nitrogen, Vac) &amp; Aksesoris Kamar</td>
+              <td class="py-2 px-3 text-right font-medium">4.000.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">12</td>
+              <td class="py-2 px-3">Pekerjaan Fasad Luar, Akses Parkir Aspal, &amp; Taman Penyembuhan</td>
+              <td class="py-2 px-3 text-right font-medium">4.500.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">13</td>
+              <td class="py-2 px-3">Jaringan Sistem Informasi Rumah Sakit (SIRS), HIS, ERP &amp; Telekomunikasi</td>
+              <td class="py-2 px-3 text-right font-medium">7.200.000.000</td>
+            </tr>
+            <tr class="bg-siloam-blue/5 font-bold">
+              <td class="py-2 px-3 text-center text-siloam-navy">14</td>
+              <td class="py-2 px-3 text-siloam-navy">Biaya Operasional Awal Rumah Sakit (Fase Startup - 2 Tahun Pertama)</td>
+              <td class="py-2 px-3 text-right text-siloam-blue">60.000.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">15</td>
+              <td class="py-2 px-3">Pengadaan Armada Ambulans Gawat Darurat &amp; Kendaraan Operasional</td>
+              <td class="py-2 px-3 text-right font-medium">5.300.000.000</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center text-neutral-400">16</td>
+              <td class="py-2 px-3">Peralatan Laundry Medis, Dapur Utama, &amp; Kitchen Set Khusus</td>
+              <td class="py-2 px-3 text-right font-medium">3.000.000.000</td>
+            </tr>
+          </tbody>
+          <tfoot class="border-t-2 border-neutral-300 font-bold bg-neutral-50">
+            <tr>
+              <td colspan="2" class="py-2 px-3 text-right text-neutral-600">Sub Total (Sebelum PPN)</td>
+              <td class="py-2 px-3 text-right text-neutral-800">419.954.800.000</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="py-2 px-3 text-right text-neutral-600">PPN Pajak Konstruksi &amp; Pengadaan (11%)</td>
+              <td class="py-2 px-3 text-right text-neutral-800">46.195.028.000</td>
+            </tr>
+            <tr class="bg-siloam-navy text-white">
+              <td colspan="2" class="py-3 px-3 text-right font-heading">GRAND TOTAL INVESTASI PROYEK (Pembulatan)</td>
+              <td class="py-3 px-3 text-right text-ashodaya-gold font-heading text-sm">Rp 466.149.828.000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 10: TIMELINE & BRANDING ==================== -->
+  <div class="a4-page justify-between">
+    <div>
+      <div class="flex justify-between items-center border-b border-neutral-200 pb-4 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-siloam-navy">9. Linimasa Proyek &amp; Swatch Warna Identitas</h2>
+        <span class="text-xs text-neutral-400 font-mono">Halaman 10</span>
+      </div>
+
+      <h3 class="font-heading font-bold text-xs text-siloam-navy uppercase tracking-wider mb-3">Linimasa Pembangunan</h3>
+      <!-- Project Timeline -->
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3 items-start text-xs">
+          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">1</span>
+          <div>
+            <p class="font-bold text-siloam-navy">Fase 1: Studi Kelayakan &amp; Perizinan Lengkap</p>
+            <p class="text-neutral-500">Penyusunan studi kelayakan, evaluasi RAB oleh aktuaris, pengurusan dokumen izin lingkungan &amp; Amdal.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start text-xs">
+          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">2</span>
+          <div>
+            <p class="font-bold text-siloam-navy">Fase 2: Groundbreaking &amp; Konstruksi Pondasi Basement</p>
+            <p class="text-neutral-500">Pematangan lahan tapak utama, penggalian struktur rubanah, cor pondasi tiang pancang gedung RS &amp; gedung parkir.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start text-xs">
+          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">3</span>
+          <div>
+            <p class="font-bold text-siloam-navy">Fase 3: Konstruksi Fisik &amp; Instalasi Mekanikal/Elektrikal</p>
+            <p class="text-neutral-500">Ereksi 6 lantai utama dan menara parkir terpisah, instalasi kelistrikan (MEP), lift pasien, genset &amp; unit IPAL.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start text-xs">
+          <span class="w-6 h-6 rounded-full bg-success text-white font-bold flex items-center justify-center flex-shrink-0">✓</span>
+          <div>
+            <p class="font-bold text-success">Fase 4: Interior Fitting, Pengadaan Alkes &amp; Grand Opening</p>
+            <p class="text-neutral-500">Pekerjaan arsitektur interior berkonsep premium hotel, kalibrasi instrumen medis Rp 160M, uji coba SIRS, commissioning &amp; peresmian.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="font-heading font-bold text-xs text-siloam-navy uppercase tracking-wider mb-3">Identitas Visual &amp; Swatch Warna</h3>
+      <!-- Colors Swatch -->
+      <div class="grid grid-cols-5 gap-2">
+        <div class="rounded p-2 text-center text-white" style="background-color: #F5A623;">
+          <p class="text-[9px] font-bold">Dawn Gold</p>
+          <p class="text-[8px] opacity-75">#F5A623</p>
+        </div>
+        <div class="rounded p-2 text-center text-white" style="background-color: #1A2A4A;">
+          <p class="text-[9px] font-bold">Twilight Blue</p>
+          <p class="text-[8px] opacity-75">#1A2A4A</p>
+        </div>
+        <div class="rounded p-2 text-center text-white" style="background-color: #8BA88E;">
+          <p class="text-[9px] font-bold">Healing Sage</p>
+          <p class="text-[8px] opacity-75">#8BA88E</p>
+        </div>
+        <div class="rounded p-2 text-center text-neutral-800 border border-neutral-200" style="background-color: #FDF8F0;">
+          <p class="text-[9px] font-bold">Pure Dawn</p>
+          <p class="text-[8px] opacity-75">#FDF8F0</p>
+        </div>
+        <div class="rounded p-2 text-center text-neutral-800" style="background-color: #D4C5A9;">
+          <p class="text-[9px] font-bold">Warm Stone</p>
+          <p class="text-[8px] opacity-75">#D4C5A9</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+      <span>Ashodaya Hospital | Executive Summary</span>
+      <span>Kemitraan Investasi</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 11: BACK COVER ==================== -->
+  <div class="a4-page justify-between text-white" style="background-color: #003087;">
+    <div class="flex justify-between items-center w-full border-b border-white/10 pb-6">
+      <div class="flex flex-col">
+        <span class="font-heading font-bold text-lg tracking-wider">ASHODAYA HOSPITAL</span>
+        <span class="text-[9px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
+      </div>
+    </div>
+
+    <div class="text-center my-auto space-y-6 max-w-md mx-auto">
+      <i data-lucide="shield-check" class="w-12 h-12 mx-auto text-ashodaya-gold opacity-80"></i>
+      <h2 class="text-2xl font-serif font-bold tracking-wide">CONFIDENTIALITY AGREEMENT</h2>
+      <p class="text-xs text-white/70 leading-relaxed text-center">
+        Informasi dan proyeksi finansial yang termuat di dalam dokumen ringkasan eksekutif ini merupakan kekayaan intelektual milik Siloam Hospitals Group. Penerima dokumen dilarang keras menggandakan, menyebarluaskan, atau membagikan sebagian atau seluruh isi dokumen ini kepada pihak ketiga tanpa persetujuan tertulis terlebih dahulu.
+      </p>
+    </div>
+
+    <!-- Contact Info Box -->
+    <div class="border border-white/15 bg-white/5 rounded-lg p-5 text-center text-xs space-y-1">
+      <p class="font-bold text-white uppercase tracking-wider">Strategic Partnership Desk</p>
+      <p class="text-siloam-blue-light">investments@ashodayahospital.co.id</p>
+      <p class="text-white/70">Siloam Hospitals Head Office: +62 21 2566 8000</p>
+      <p class="text-white/50 text-[10px] mt-2">© 2026 Ashodaya Hospital. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
