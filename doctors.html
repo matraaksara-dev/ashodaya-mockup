@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashodaya Hospital – Fajar Harapan. Rumah sakit premium di Yogyakarta dikelola oleh Siloam Hospitals.">
+  <title>Tim Dokter | Ashodaya Hospital</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            siloam: { blue: '#005EB8', 'blue-light': '#00AEEF', navy: '#003087', 'navy-dark': '#00205F' },
+            neutral: { 50: '#F8F9FA', 100: '#F1F3F5', 200: '#E9ECEF', 300: '#DEE2E6', 400: '#CED4DA', 500: '#ADB5BD', 600: '#6B7280', 700: '#495057', 800: '#343A40', 900: '#212529' },
+            success: '#00B388', warning: '#FF9F1C', danger: '#E63946',
+            tech: { blue: '#0ea5e9', neon: '#38bdf8', dark: '#0f172a' },
+            ashodaya: { gold: '#F5A623', sage: '#8BA88E', dawn: '#FDF8F0', stone: '#D4C5A9' }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          borderRadius: { siloam: '12px', 'siloam-lg': '16px', 'siloam-xl': '24px' },
+          boxShadow: { 
+            siloam: '0 4px 20px rgba(0, 94, 184, 0.08)', 
+            'siloam-hover': '0 10px 30px rgba(0, 94, 184, 0.15)',
+            'tech-glow': '0 0 40px rgba(14, 165, 233, 0.3)'
+          },
+          animation: { 'float': 'float 6s ease-in-out infinite', 'pulse-blue': 'pulse-blue 2s ease-in-out infinite' },
+          keyframes: {
+            float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } },
+            'pulse-blue': { '0%, 100%': { boxShadow: '0 0 0 0 rgba(0, 94, 184, 0.4)' }, '70%': { boxShadow: '0 0 0 10px rgba(0, 94, 184, 0)' } }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --siloam-blue: #005EB8; --siloam-blue-light: #00AEEF; --siloam-navy: #003087; --neutral-50: #F8F9FA; --success: #00B388;
+    }
+    html { scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--neutral-50); }
+    ::-webkit-scrollbar-thumb { background: var(--siloam-blue); border-radius: 3px; }
+    ::selection { background: var(--siloam-blue); color: white; }
+    .swiper-pagination-bullet-active { background: var(--siloam-blue) !important; width: 16px !important; border-radius: 4px !important; }
+    .swiper-button-next, .swiper-button-prev { color: var(--siloam-blue) !important; }
+  </style>
+</head>
+<body class="font-body text-neutral-900 bg-white antialiased overflow-x-hidden pt-20">
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-siloam border-b border-neutral-200 transition-all duration-300">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex flex-col select-none flex-shrink-0">
+        <span class="font-heading font-bold text-2xl text-siloam-blue tracking-tight leading-none">ASHODAYA</span>
+        <span class="text-[10px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-1">Siloam Hospitals Network</span>
+      </a>
+
+      <div class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Beranda</a>
+        <a href="about.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Tentang Kami</a>
+        <a href="services.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Layanan</a>
+        <a href="doctors.html" class="text-siloam-blue hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Tim Dokter</a>
+        <a href="digital.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap relative">Ekosistem Digital <span class="absolute -top-3 -right-3 bg-danger text-white text-[9px] px-1.5 py-0.5 rounded-full animate-pulse">NEW</span></a>
+        <a href="contact.html" class="text-neutral-700 hover:text-siloam-blue font-heading font-semibold text-sm transition-colors whitespace-nowrap">Lokasi</a>
+      </div>
+
+      <div class="hidden md:flex items-center flex-shrink-0 ml-4">
+        <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam px-6 py-2.5 font-heading font-semibold text-sm hover:bg-siloam-navy hover:-translate-y-0.5 shadow-siloam transition-all animate-pulse-blue whitespace-nowrap">
+          Buat Janji
+        </a>
+      </div>
+
+      <button id="btn-open" class="lg:hidden flex items-center gap-2 text-neutral-800 bg-neutral-100 hover:bg-neutral-200 px-4 py-2 rounded-siloam focus:outline-none transition-colors" aria-label="Buka Menu">
+        <span class="font-heading font-semibold text-sm">Menu</span>
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="fixed inset-0 z-[100] bg-siloam-navy/95 backdrop-blur-md translate-x-full transition-transform duration-300 flex flex-col lg:hidden">
+    <div class="flex items-center justify-between p-6 border-b border-white/10">
+      <div class="flex flex-col text-white">
+        <span class="font-heading font-bold text-2xl tracking-tight leading-none">ASHODAYA</span>
+        <span class="text-[10px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-1">Siloam Hospitals Network</span>
+      </div>
+      <button id="btn-close" class="text-white p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors" aria-label="Tutup Menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    
+    <div class="flex flex-col space-y-6 p-8 text-xl font-heading font-semibold overflow-y-auto">
+      <a href="index.html" class="text-white hover:text-siloam-blue-light transition-colors">Beranda</a>
+      <a href="about.html" class="text-white hover:text-siloam-blue-light transition-colors">Tentang Kami</a>
+      <a href="services.html" class="text-white hover:text-siloam-blue-light transition-colors">Layanan & Fasilitas</a>
+      <a href="doctors.html" class="text-white hover:text-siloam-blue-light transition-colors">Tim Dokter</a>
+      <a href="digital.html" class="text-white hover:text-siloam-blue-light transition-colors flex items-center gap-3">Ekosistem Digital <span class="bg-danger text-white text-[10px] px-2 py-1 rounded-full uppercase tracking-wider">Baru</span></a>
+      <a href="contact.html" class="text-white hover:text-siloam-blue-light transition-colors">Lokasi & Kontak</a>
+      
+      <a href="contact.html" class="bg-siloam-blue text-white rounded-siloam text-center py-4 font-semibold hover:bg-siloam-navy transition-all mt-4">
+        Buat Janji Sekarang
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-siloam-navy text-white py-16">
+    <div class="max-w-[85rem] mx-auto px-6 text-center" data-aos="fade-up">
+      <h1 class="text-4xl font-heading font-bold mb-4">Tim Medis Spesialis</h1>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto">Berdedikasi untuk memberikan pelayanan terbaik bagi Anda.</p>
+    </div>
+  </div>
+
+  <section class="py-20 bg-neutral-50">
+    <div class="max-w-[85rem] mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-siloam shadow-siloam border border-neutral-200 overflow-hidden hover:-translate-y-1 transition-all" data-aos="fade-up">
+          <img src="assets/img/doctor_profile.png" alt="dr. Arief" class="w-full h-64 object-cover object-top">
+          <div class="p-6 text-center">
+            <span class="bg-siloam-blue/10 text-siloam-blue rounded-full px-3 py-1 text-xs font-semibold uppercase block w-max mx-auto mb-3">Spesialis Penyakit Dalam</span>
+            <h3 class="font-heading font-bold text-lg text-siloam-navy mb-1">dr. Arief Wibowo, Sp.PD</h3>
+            <p class="text-xs text-neutral-500 mb-4">Pengalaman: 15 Tahun</p>
+            <a href="contact.html" class="bg-siloam-blue hover:bg-siloam-navy text-white font-heading font-semibold text-sm rounded-siloam w-full py-2 block text-center transition-colors">Buat Janji</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-siloam-navy text-white/80 border-t border-white/5 pt-16 pb-8 mt-auto">
+    <div class="max-w-[85rem] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="space-y-4">
+        <div class="flex flex-col text-white">
+          <span class="font-heading font-bold text-xl tracking-tight leading-none text-white">ASHODAYA HOSPITAL</span>
+          <span class="text-[10px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-1">Siloam Hospitals Network</span>
+        </div>
+        <p class="text-sm text-white/60 leading-relaxed">
+          Rumah sakit rujukan premium berstandar manajemen internasional Siloam Hospitals, didedikasikan untuk melayani masyarakat Jogja sepenuh hati.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Layanan Medis</h4>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="contact.html" class="hover:text-siloam-blue-light transition-colors">IGD Darurat 24 Jam</a></li>
+          <li><a href="services.html" class="hover:text-siloam-blue-light transition-colors">Rawat Inap VIP & Suite</a></li>
+          <li><a href="services.html" class="hover:text-siloam-blue-light transition-colors">Poliklinik Spesialis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Informasi Korporat</h4>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="about.html" class="hover:text-siloam-blue-light transition-colors">Tentang Kami</a></li>
+          <li><a href="digital.html" class="hover:text-siloam-blue-light transition-colors">Ekosistem Digital</a></li>
+          <li><a href="doctors.html" class="hover:text-siloam-blue-light transition-colors">Tim Dokter Spesialis</a></li>
+          <li><a href="summary.html" class="text-ashodaya-gold font-semibold hover:text-white transition-colors">Executive Project Summary</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Hubungi Kami</h4>
+        <p class="text-sm text-white/65">Jl. Tentara Pelajar, Kel. Bumijo, Kec. Jetis, Kota Yogyakarta 55231</p>
+        <p class="text-sm text-white/65">Email: info@ashodayahospital.co.id</p>
+      </div>
+    </div>
+    <div class="max-w-[85rem] mx-auto px-6 border-t border-white/5 pt-8 text-center text-xs text-white/40">
+      <p class="mb-2">© 2026 Ashodaya Hospital. Dikelola oleh Siloam Hospitals Group. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnOpen = document.getElementById('btn-open');
+      const btnClose = document.getElementById('btn-close');
+      const drawer = document.getElementById('mobile-drawer');
+      
+      btnOpen.addEventListener('click', () => {
+        drawer.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+      });
+      
+      btnClose.addEventListener('click', () => {
+        drawer.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+      });
+
+      AOS.init({ duration: 750, once: true, offset: 60 });
+      lucide.createIcons();
+      
+      if (typeof pageInit === 'function') {
+        pageInit();
+      }
+    });
+  </script>
+</body>
+</html>
