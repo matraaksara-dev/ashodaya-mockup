@@ -47,19 +47,26 @@
       height: 297mm;
       background: white;
       margin: 0 auto 10mm auto;
-      padding: 20mm 18mm;
+      padding: 22mm 20mm; /* Sesuai standar dokumen formal */
       box-sizing: border-box;
       page-break-after: always;
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      justify-content: justify;
       box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
     .a4-page:last-child {
       page-break-after: auto;
       margin-bottom: 0;
     }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .text-corporate { color: #003087; }
+    .text-gold { color: #F5A623; }
+    .bg-corporate { background-color: #003087; }
     @media print {
       body {
         background: white;
@@ -78,10 +85,10 @@
     <!-- Top Branding -->
     <div class="flex justify-between items-center w-full border-b border-white/10 pb-6">
       <div class="flex flex-col">
-        <span class="font-heading font-bold text-lg tracking-wider">ASHODAYA HOSPITAL</span>
-        <span class="text-[9px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
+        <span class="font-heading font-bold text-xl tracking-wider">ASHODAYA HOSPITAL</span>
+        <span class="text-[11px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
       </div>
-      <div class="text-[10px] uppercase tracking-widest text-white/50 font-bold border border-white/20 px-3 py-1 rounded">
+      <div class="text-xs uppercase tracking-widest text-white/60 font-bold border border-white/20 px-4 py-1.5 rounded">
         Proposal Investasi
       </div>
     </div>
@@ -140,7 +147,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -162,34 +169,34 @@
       <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="bg-siloam-navy text-white p-5 rounded-lg shadow-sm flex flex-col justify-between">
           <div>
-            <div class="text-[10px] text-white/60 uppercase tracking-widest font-semibold">Total Nilai Investasi</div>
-            <div class="text-2xl font-bold text-ashodaya-gold mt-1">Rp 466,14 M</div>
+            <div class="text-xs text-white/70 uppercase tracking-widest font-semibold">Total Nilai Investasi</div>
+            <div class="text-3xl font-bold text-ashodaya-gold mt-1">Rp 466,14 M</div>
           </div>
-          <div class="text-[10px] text-white/50 border-t border-white/10 pt-2 mt-4">Termasuk PPN 11% (CAPEX &amp; OPEX Awal)</div>
+          <div class="text-xs text-white/50 border-t border-white/10 pt-2 mt-4">Termasuk PPN 11% (CAPEX &amp; OPEX Awal)</div>
         </div>
 
         <div class="bg-siloam-blue text-white p-5 rounded-lg shadow-sm flex flex-col justify-between">
           <div>
-            <div class="text-[10px] text-white/60 uppercase tracking-widest font-semibold">Kapasitas Tempat Tidur</div>
-            <div class="text-2xl font-bold text-white mt-1">150 Beds</div>
+            <div class="text-xs text-white/70 uppercase tracking-widest font-semibold">Kapasitas Tempat Tidur</div>
+            <div class="text-3xl font-bold text-white mt-1">150 Beds</div>
           </div>
-          <div class="text-[10px] text-white/50 border-t border-white/10 pt-2 mt-4">VIP &amp; Suite, Kelas 1/2/3, &amp; Ruang ICU</div>
+          <div class="text-xs text-white/50 border-t border-white/10 pt-2 mt-4">VIP &amp; Suite, Kelas 1/2/3, &amp; Ruang ICU</div>
         </div>
 
         <div class="bg-neutral-50 border border-neutral-200 p-5 rounded-lg flex flex-col justify-between">
           <div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">Spesifikasi Lahan</div>
-            <div class="text-2xl font-bold text-siloam-navy mt-1">5.610 m²</div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest font-semibold">Spesifikasi Lahan</div>
+            <div class="text-3xl font-bold text-siloam-navy mt-1">5.610 m²</div>
           </div>
-          <div class="text-[10px] text-neutral-400 border-t border-neutral-200 pt-2 mt-4">Dimensi Tapak: 85 meter &times; 66 meter</div>
+          <div class="text-xs text-neutral-400 border-t border-neutral-200 pt-2 mt-4">Dimensi Tapak: 85 meter &times; 66 meter</div>
         </div>
 
         <div class="bg-neutral-50 border border-neutral-200 p-5 rounded-lg flex flex-col justify-between">
           <div>
-            <div class="text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">Struktur Gedung RS</div>
-            <div class="text-2xl font-bold text-siloam-navy mt-1">7 Tingkat</div>
+            <div class="text-xs text-neutral-500 uppercase tracking-widest font-semibold">Struktur Gedung RS</div>
+            <div class="text-3xl font-bold text-siloam-navy mt-1">7 Tingkat</div>
           </div>
-          <div class="text-[10px] text-neutral-400 border-t border-neutral-200 pt-2 mt-4">1 Lantai Basement &amp; 6 Lantai Utama</div>
+          <div class="text-xs text-neutral-400 border-t border-neutral-200 pt-2 mt-4">1 Lantai Basement &amp; 6 Lantai Utama</div>
         </div>
       </div>
 
@@ -215,7 +222,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -236,7 +243,7 @@
       <!-- CSS Site Plan Diagram -->
       <div class="border-2 border-neutral-300 rounded-lg p-4 bg-neutral-50 relative mx-auto max-w-md" style="aspect-ratio: 85/66;">
         <!-- Jalan raya label (atas = depan) -->
-        <div class="text-center text-[9px] font-bold text-neutral-500 uppercase tracking-widest mb-2 border-b border-neutral-200 pb-1">
+        <div class="text-center text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-3 border-b border-neutral-200 pb-1.5">
           ↑ AKSES UTAMA PUBLIK (JL. TENTARA PELAJAR) ↑
         </div>
         
@@ -245,16 +252,16 @@
           <div class="flex gap-2 justify-center" style="flex: 3;">
             <div class="flex-1 bg-siloam-navy rounded-lg flex flex-col items-center justify-center text-white p-3 shadow-md">
               <i data-lucide="hospital" class="w-6 h-6 mb-1 text-ashodaya-gold"></i>
-              <div class="font-bold text-[10px] text-center uppercase tracking-wider">Gedung RS Utama</div>
-              <div class="text-[8px] text-white/70 text-center">64,3m &times; 33,7m</div>
-              <div class="text-[8px] text-white/70 text-center">6 Lantai + Basement</div>
+              <div class="font-bold text-xs text-center uppercase tracking-wider">Gedung RS Utama</div>
+              <div class="text-[11px] text-white/80 text-center">64,3m &times; 33,7m</div>
+              <div class="text-[11px] text-white/80 text-center">6 Lantai + Basement</div>
             </div>
           </div>
           
           <!-- Row 2: Healing Garden -->
           <div class="flex gap-2" style="flex: 1.5;">
             <div class="bg-success/15 border border-success/30 rounded-lg flex-1 flex items-center justify-center p-1.5">
-              <span class="text-success font-bold text-[9px] uppercase tracking-wider">🌿 Healing Garden (17m &times; 67m)</span>
+              <span class="text-success font-bold text-xs uppercase tracking-wider">🌿 Healing Garden (17m &times; 67m)</span>
             </div>
           </div>
 
@@ -262,14 +269,14 @@
           <div class="flex gap-2 justify-center" style="flex: 2;">
             <div class="flex-1 bg-neutral-600 rounded-lg flex flex-col items-center justify-center text-white p-2 shadow-md">
               <i data-lucide="car" class="w-5 h-5 mb-1 text-white/80"></i>
-              <div class="font-bold text-[9px] text-center uppercase tracking-wider">Gedung Parkir &amp; IPAL</div>
-              <div class="text-[8px] text-white/70 text-center">43,5m &times; 30m | 5 Lantai</div>
+              <div class="font-bold text-[11px] text-center uppercase tracking-wider">Gedung Parkir &amp; IPAL</div>
+              <div class="text-[11px] text-white/80 text-center">43,5m &times; 30m | 5 Lantai</div>
             </div>
           </div>
         </div>
         
         <!-- Jalan keliling indicator -->
-        <div class="absolute bottom-1 right-2 text-[8px] text-neutral-400">Jalan Keliling Pemadam Kebakaran &amp; Ambulans (Lebar 7m)</div>
+        <div class="absolute bottom-1 right-2 text-[9px] text-neutral-400 font-medium">Jalan Sirkulasi Layanan &amp; Kebakaran (Lebar 7m)</div>
       </div>
 
       <div class="mt-6 text-xs text-neutral-500 space-y-1 text-justify">
@@ -278,7 +285,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -349,7 +356,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -409,7 +416,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -432,49 +439,49 @@
         <table class="w-full text-left border-collapse text-xs">
           <thead>
             <tr class="bg-neutral-800 text-white font-heading">
-              <th class="py-2.5 px-3 w-16">Lantai</th>
-              <th class="py-2.5 px-3">Fungsi &amp; Pembagian Kapasitas</th>
-              <th class="py-2.5 px-3 text-center w-24">Luas (m²)</th>
-              <th class="py-2.5 px-3 text-center w-24">Keterangan</th>
+              <th class="py-3 px-3 w-20">Lantai</th>
+              <th class="py-3 px-3">Fungsi &amp; Pembagian Kapasitas</th>
+              <th class="py-3 px-3 text-center w-28">Luas (m²)</th>
+              <th class="py-3 px-3 text-center w-32">Keterangan</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-neutral-200 bg-white">
             <tr class="bg-neutral-50">
-              <td class="py-2 px-3 font-bold text-neutral-700">Lantai 1</td>
-              <td class="py-2 px-3 font-medium">Unit Pengolahan Limbah IPAL Utama + Pos Penjagaan Keamanan</td>
-              <td class="py-2 px-3 text-center">1.305</td>
-              <td class="py-2 px-3 text-center text-neutral-500">IPAL: 17,5m &times; 8m</td>
+              <td class="py-2.5 px-3 font-bold text-neutral-700">Lantai 1</td>
+              <td class="py-2.5 px-3 font-medium">Unit Pengolahan Limbah IPAL Utama + Pos Penjagaan Keamanan</td>
+              <td class="py-2.5 px-3 text-center">1.305</td>
+              <td class="py-2.5 px-3 text-center text-neutral-500">IPAL: 17,5m &times; 8m</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 2</td>
-              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
-              <td class="py-2 px-3 text-center">1.305</td>
-              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
+              <td class="py-2.5 px-3 font-semibold text-siloam-blue">Lantai 2</td>
+              <td class="py-2.5 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2.5 px-3 text-center">1.305</td>
+              <td class="py-2.5 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 3</td>
-              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
-              <td class="py-2 px-3 text-center">1.305</td>
-              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
+              <td class="py-2.5 px-3 font-semibold text-siloam-blue">Lantai 3</td>
+              <td class="py-2.5 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2.5 px-3 text-center">1.305</td>
+              <td class="py-2.5 px-3 text-center text-neutral-500">37 Mobil + 120 Motor</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 font-semibold text-siloam-blue">Lantai 4</td>
-              <td class="py-2 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
-              <td class="py-2 px-3 text-center">1.305</td>
-              <td class="py-2 px-3 text-center text-neutral-500">37 Mobil + 110 Motor</td>
+              <td class="py-2.5 px-3 font-semibold text-siloam-blue">Lantai 4</td>
+              <td class="py-2.5 px-3">Zonasi Parkir Kendaraan Pengunjung &amp; Pasien</td>
+              <td class="py-2.5 px-3 text-center">1.305</td>
+              <td class="py-2.5 px-3 text-center text-neutral-500">37 Mobil + 110 Motor</td>
             </tr>
             <tr class="bg-success/5">
-              <td class="py-2 px-3 font-bold text-success">Lantai 5</td>
-              <td class="py-2 px-3 font-medium">Kantin Umum, Kafetaria Karyawan &amp; Area Istirahat Publik</td>
-              <td class="py-2 px-3 text-center">1.305</td>
-              <td class="py-2 px-3 text-center text-success">Non-klinis</td>
+              <td class="py-2.5 px-3 font-bold text-success">Lantai 5</td>
+              <td class="py-2.5 px-3 font-medium">Kantin Umum, Kafetaria Karyawan &amp; Area Istirahat Publik</td>
+              <td class="py-2.5 px-3 text-center">1.305</td>
+              <td class="py-2.5 px-3 text-center text-success">Non-klinis</td>
             </tr>
           </tbody>
-          <tfoot class="bg-neutral-100 font-bold border-t border-neutral-300">
+          <tfoot class="bg-neutral-100 font-bold border-t border-neutral-300 text-xs">
             <tr>
-              <td colspan="2" class="py-2.5 px-3 text-right">Total Kapasitas Lahan Gedung Parkir</td>
-              <td class="py-2.5 px-3 text-center text-siloam-blue">6.525 m²</td>
-              <td class="py-2.5 px-3 text-center text-siloam-navy text-[10px]">111 Mobil | 350 Motor</td>
+              <td colspan="2" class="py-3 px-3 text-right">Total Kapasitas Lahan Gedung Parkir</td>
+              <td class="py-3 px-3 text-center text-siloam-blue">6.525 m²</td>
+              <td class="py-3 px-3 text-center text-siloam-navy">111 Mobil | 350 Motor</td>
             </tr>
           </tfoot>
         </table>
@@ -482,7 +489,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -505,80 +512,80 @@
         <table class="w-full text-left border-collapse text-xs">
           <thead>
             <tr class="bg-siloam-navy text-white font-heading">
-              <th class="py-2.5 px-3 w-12 text-center">No.</th>
-              <th class="py-2.5 px-3">Uraian Pekerjaan Struktur &amp; Sipil</th>
-              <th class="py-2.5 px-3 text-right w-44">Estimasi Biaya (Rp)</th>
+              <th class="py-3 px-3 w-12 text-center">No.</th>
+              <th class="py-3 px-3">Uraian Pekerjaan Struktur &amp; Sipil</th>
+              <th class="py-3 px-3 text-right w-48">Estimasi Biaya (Rp)</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-neutral-200 bg-white">
             <tr>
-              <td class="py-2 px-3 text-center text-neutral-400">1</td>
-              <td class="py-2 px-3">Pekerjaan Persiapan Lahan, Penggalian, &amp; Pematangan Tapak</td>
-              <td class="py-2 px-3 text-right font-medium">2.000.000.000</td>
+              <td class="py-2.5 px-3 text-center text-neutral-400">1</td>
+              <td class="py-2.5 px-3">Pekerjaan Persiapan Lahan, Penggalian, &amp; Pematangan Tapak</td>
+              <td class="py-2.5 px-3 text-right font-medium">2.000.000.000</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 text-center text-neutral-400">2</td>
-              <td class="py-2 px-3">Perencanaan Arsitektur, Pengawasan Teknis, &amp; Legalitas Perizinan</td>
-              <td class="py-2 px-3 text-right font-medium">5.000.000.000</td>
+              <td class="py-2.5 px-3 text-center text-neutral-400">2</td>
+              <td class="py-2.5 px-3">Perencanaan Arsitektur, Pengawasan Teknis, &amp; Legalitas Perizinan</td>
+              <td class="py-2.5 px-3 text-right font-medium">5.000.000.000</td>
             </tr>
             <tr class="bg-siloam-blue/5 font-bold">
-              <td class="py-2 px-3 text-center text-siloam-navy">3</td>
-              <td class="py-2 px-3 text-siloam-navy">Pekerjaan Konstruksi &amp; Arsitektur Gedung RS Utama (Sub-total)</td>
-              <td class="py-2 px-3 text-right text-siloam-blue">145.154.800.000</td>
+              <td class="py-2.5 px-3 text-center text-siloam-navy">3</td>
+              <td class="py-2.5 px-3 text-siloam-navy">Pekerjaan Konstruksi &amp; Arsitektur Gedung RS Utama (Sub-total)</td>
+              <td class="py-2.5 px-3 text-right text-siloam-blue">145.154.800.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3a</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur Basement (Rubanah)</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">46.577.200.000</td>
+              <td class="py-2 px-3 text-center">3a</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur Basement (Rubanah)</td>
+              <td class="py-2 px-3 text-right">46.577.200.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3b</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 1</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">26.648.900.000</td>
+              <td class="py-2 px-3 text-center">3b</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 1</td>
+              <td class="py-2 px-3 text-right">26.648.900.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3c</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 2</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">19.927.800.000</td>
+              <td class="py-2 px-3 text-center">3c</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 2</td>
+              <td class="py-2 px-3 text-right">19.927.800.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3d</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 3</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+              <td class="py-2 px-3 text-center">3d</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 3</td>
+              <td class="py-2 px-3 text-right">16.289.700.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3e</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 4</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+              <td class="py-2 px-3 text-center">3e</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 4</td>
+              <td class="py-2 px-3 text-right">16.289.700.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3f</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 5</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">16.289.700.000</td>
+              <td class="py-2 px-3 text-center">3f</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 5</td>
+              <td class="py-2 px-3 text-right">16.289.700.000</td>
             </tr>
             <tr class="hover:bg-neutral-50 text-neutral-600">
-              <td class="py-1.5 px-3 text-center text-[10px]">3g</td>
-              <td class="py-1.5 px-3 pl-8 text-[10px]">↳ Pekerjaan Struktur &amp; finishing Lantai 6</td>
-              <td class="py-1.5 px-3 text-right text-[10px]">3.131.800.000</td>
+              <td class="py-2 px-3 text-center">3g</td>
+              <td class="py-2 px-3 pl-8">↳ Pekerjaan Struktur &amp; finishing Lantai 6</td>
+              <td class="py-2 px-3 text-right">3.131.800.000</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 text-center text-neutral-400">4</td>
-              <td class="py-2 px-3">Pekerjaan Mekanikal, Elektrikal, Lift Pasien, &amp; Genset Utama</td>
-              <td class="py-2 px-3 text-right font-medium">5.900.000.000</td>
+              <td class="py-2.5 px-3 text-center text-neutral-400">4</td>
+              <td class="py-2.5 px-3">Pekerjaan Mekanikal, Elektrikal, Lift Pasien, &amp; Genset Utama</td>
+              <td class="py-2.5 px-3 text-right font-medium">5.900.000.000</td>
             </tr>
             <tr>
-              <td class="py-2 px-3 text-center text-neutral-400">5</td>
-              <td class="py-2 px-3">Pekerjaan Interior Eksekutif &amp; Peralatan Non-Medis Gedung</td>
-              <td class="py-2 px-3 text-right font-medium">5.000.000.000</td>
+              <td class="py-2.5 px-3 text-center text-neutral-400">5</td>
+              <td class="py-2.5 px-3">Pekerjaan Interior Eksekutif &amp; Peralatan Non-Medis Gedung</td>
+              <td class="py-2.5 px-3 text-right font-medium">5.000.000.000</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="text-[10px] text-neutral-400 mt-4">*Biaya dalam tabel merupakan representasi CAPEX sipil awal dan belum dikonsolidasikan dengan PPN 11%.</p>
+      <p class="text-xs text-neutral-400 mt-4">*Biaya dalam tabel merupakan estimasi pekerjaan sipil awal terukur, belum dikonsolidasikan dengan PPN 11%.</p>
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -599,7 +606,7 @@
             <tr class="bg-siloam-navy text-white font-heading">
               <th class="py-2.5 px-3 w-12 text-center">No.</th>
               <th class="py-2.5 px-3">Uraian Pekerjaan Penunjang &amp; Akuisisi Alkes</th>
-              <th class="py-2.5 px-3 text-right w-44">Estimasi Biaya (Rp)</th>
+              <th class="py-2.5 px-3 text-right w-48">Estimasi Biaya (Rp)</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-neutral-200 bg-white">
@@ -659,7 +666,7 @@
               <td class="py-2 px-3 text-right font-medium">3.000.000.000</td>
             </tr>
           </tbody>
-          <tfoot class="border-t-2 border-neutral-300 font-bold bg-neutral-50">
+          <tfoot class="border-t-2 border-neutral-300 font-bold bg-neutral-50 text-xs">
             <tr>
               <td colspan="2" class="py-2 px-3 text-right text-neutral-600">Sub Total (Sebelum PPN)</td>
               <td class="py-2 px-3 text-right text-neutral-800">419.954.800.000</td>
@@ -668,8 +675,8 @@
               <td colspan="2" class="py-2 px-3 text-right text-neutral-600">PPN Pajak Konstruksi &amp; Pengadaan (11%)</td>
               <td class="py-2 px-3 text-right text-neutral-800">46.195.028.000</td>
             </tr>
-            <tr class="bg-siloam-navy text-white">
-              <td colspan="2" class="py-3 px-3 text-right font-heading">GRAND TOTAL INVESTASI PROYEK (Pembulatan)</td>
+            <tr class="bg-siloam-navy text-white font-bold text-xs">
+              <td colspan="2" class="py-3 px-3 text-right font-heading">GRAND TOTAL INVESTASI PROYEK (Pembulatan Resmi)</td>
               <td class="py-3 px-3 text-right text-ashodaya-gold font-heading text-sm">Rp 466.149.828.000</td>
             </tr>
           </tfoot>
@@ -678,7 +685,7 @@
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -692,67 +699,67 @@
         <span class="text-xs text-neutral-400 font-mono">Halaman 10</span>
       </div>
 
-      <h3 class="font-heading font-bold text-xs text-siloam-navy uppercase tracking-wider mb-3">Linimasa Pembangunan</h3>
+      <h3 class="font-heading font-bold text-xs text-siloam-navy uppercase tracking-wider mb-4">Linimasa Pembangunan</h3>
       <!-- Project Timeline -->
-      <div class="space-y-3 mb-6">
-        <div class="flex gap-3 items-start text-xs">
-          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">1</span>
+      <div class="space-y-4 mb-8">
+        <div class="flex gap-4 items-start text-xs">
+          <span class="w-7 h-7 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0 text-xs">1</span>
           <div>
-            <p class="font-bold text-siloam-navy">Fase 1: Studi Kelayakan &amp; Perizinan Lengkap</p>
-            <p class="text-neutral-500">Penyusunan studi kelayakan, evaluasi RAB oleh aktuaris, pengurusan dokumen izin lingkungan &amp; Amdal.</p>
+            <p class="font-bold text-siloam-navy text-sm">Fase 1: Studi Kelayakan &amp; Perizinan Lengkap</p>
+            <p class="text-neutral-500 mt-0.5 text-xs">Penyusunan studi kelayakan, evaluasi RAB oleh aktuaris, pengurusan dokumen izin lingkungan &amp; Amdal.</p>
           </div>
         </div>
-        <div class="flex gap-3 items-start text-xs">
-          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">2</span>
+        <div class="flex gap-4 items-start text-xs">
+          <span class="w-7 h-7 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0 text-xs">2</span>
           <div>
-            <p class="font-bold text-siloam-navy">Fase 2: Groundbreaking &amp; Konstruksi Pondasi Basement</p>
-            <p class="text-neutral-500">Pematangan lahan tapak utama, penggalian struktur rubanah, cor pondasi tiang pancang gedung RS &amp; gedung parkir.</p>
+            <p class="font-bold text-siloam-navy text-sm">Fase 2: Groundbreaking &amp; Konstruksi Pondasi Basement</p>
+            <p class="text-neutral-500 mt-0.5 text-xs">Pematangan lahan tapak utama, penggalian struktur rubanah, cor pondasi tiang pancang gedung RS &amp; gedung parkir.</p>
           </div>
         </div>
-        <div class="flex gap-3 items-start text-xs">
-          <span class="w-6 h-6 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0">3</span>
+        <div class="flex gap-4 items-start text-xs">
+          <span class="w-7 h-7 rounded-full bg-ashodaya-gold text-white font-bold flex items-center justify-center flex-shrink-0 text-xs">3</span>
           <div>
-            <p class="font-bold text-siloam-navy">Fase 3: Konstruksi Fisik &amp; Instalasi Mekanikal/Elektrikal</p>
-            <p class="text-neutral-500">Ereksi 6 lantai utama dan menara parkir terpisah, instalasi kelistrikan (MEP), lift pasien, genset &amp; unit IPAL.</p>
+            <p class="font-bold text-siloam-navy text-sm">Fase 3: Konstruksi Fisik &amp; Instalasi Mekanikal/Elektrikal</p>
+            <p class="text-neutral-500 mt-0.5 text-xs">Ereksi 6 lantai utama dan menara parkir terpisah, instalasi kelistrikan (MEP), lift pasien, genset &amp; unit IPAL.</p>
           </div>
         </div>
-        <div class="flex gap-3 items-start text-xs">
-          <span class="w-6 h-6 rounded-full bg-success text-white font-bold flex items-center justify-center flex-shrink-0">✓</span>
+        <div class="flex gap-4 items-start text-xs">
+          <span class="w-7 h-7 rounded-full bg-success text-white font-bold flex items-center justify-center flex-shrink-0 text-xs">✓</span>
           <div>
-            <p class="font-bold text-success">Fase 4: Interior Fitting, Pengadaan Alkes &amp; Grand Opening</p>
-            <p class="text-neutral-500">Pekerjaan arsitektur interior berkonsep premium hotel, kalibrasi instrumen medis Rp 160M, uji coba SIRS, commissioning &amp; peresmian.</p>
+            <p class="font-bold text-success text-sm">Fase 4: Interior Fitting, Pengadaan Alkes &amp; Grand Opening</p>
+            <p class="text-neutral-500 mt-0.5 text-xs">Pekerjaan arsitektur interior berkonsep premium hotel, kalibrasi instrumen medis Rp 160M, uji coba SIRS, commissioning &amp; peresmian.</p>
           </div>
         </div>
       </div>
 
       <h3 class="font-heading font-bold text-xs text-siloam-navy uppercase tracking-wider mb-3">Identitas Visual &amp; Swatch Warna</h3>
       <!-- Colors Swatch -->
-      <div class="grid grid-cols-5 gap-2">
-        <div class="rounded p-2 text-center text-white" style="background-color: #F5A623;">
-          <p class="text-[9px] font-bold">Dawn Gold</p>
-          <p class="text-[8px] opacity-75">#F5A623</p>
+      <div class="grid grid-cols-5 gap-3">
+        <div class="rounded p-3.5 text-center text-white" style="background-color: #F5A623;">
+          <p class="text-[11px] font-bold">Dawn Gold</p>
+          <p class="text-[9px] opacity-75 font-medium">#F5A623</p>
         </div>
-        <div class="rounded p-2 text-center text-white" style="background-color: #1A2A4A;">
-          <p class="text-[9px] font-bold">Twilight Blue</p>
-          <p class="text-[8px] opacity-75">#1A2A4A</p>
+        <div class="rounded p-3.5 text-center text-white" style="background-color: #1A2A4A;">
+          <p class="text-[11px] font-bold">Twilight Blue</p>
+          <p class="text-[9px] opacity-75 font-medium">#1A2A4A</p>
         </div>
-        <div class="rounded p-2 text-center text-white" style="background-color: #8BA88E;">
-          <p class="text-[9px] font-bold">Healing Sage</p>
-          <p class="text-[8px] opacity-75">#8BA88E</p>
+        <div class="rounded p-3.5 text-center text-white" style="background-color: #8BA88E;">
+          <p class="text-[11px] font-bold">Healing Sage</p>
+          <p class="text-[9px] opacity-75 font-medium">#8BA88E</p>
         </div>
-        <div class="rounded p-2 text-center text-neutral-800 border border-neutral-200" style="background-color: #FDF8F0;">
-          <p class="text-[9px] font-bold">Pure Dawn</p>
-          <p class="text-[8px] opacity-75">#FDF8F0</p>
+        <div class="rounded p-3.5 text-center text-neutral-800 border border-neutral-200" style="background-color: #FDF8F0;">
+          <p class="text-[11px] font-bold">Pure Dawn</p>
+          <p class="text-[9px] opacity-75 font-medium">#FDF8F0</p>
         </div>
-        <div class="rounded p-2 text-center text-neutral-800" style="background-color: #D4C5A9;">
-          <p class="text-[9px] font-bold">Warm Stone</p>
-          <p class="text-[8px] opacity-75">#D4C5A9</p>
+        <div class="rounded p-3.5 text-center text-neutral-800" style="background-color: #D4C5A9;">
+          <p class="text-[11px] font-bold">Warm Stone</p>
+          <p class="text-[9px] opacity-75 font-medium">#D4C5A9</p>
         </div>
       </div>
     </div>
 
     <!-- Page Footer -->
-    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest">
+    <div class="border-t border-neutral-200 pt-4 flex justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
       <span>Ashodaya Hospital | Executive Summary</span>
       <span>Kemitraan Investasi</span>
     </div>
@@ -763,7 +770,7 @@
     <div class="flex justify-between items-center w-full border-b border-white/10 pb-6">
       <div class="flex flex-col">
         <span class="font-heading font-bold text-lg tracking-wider">ASHODAYA HOSPITAL</span>
-        <span class="text-[9px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
+        <span class="text-[11px] font-heading font-semibold text-siloam-blue-light tracking-widest uppercase mt-0.5">Siloam Hospitals Network</span>
       </div>
     </div>
 
